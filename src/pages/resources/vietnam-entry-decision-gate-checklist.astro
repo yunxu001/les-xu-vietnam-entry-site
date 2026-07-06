@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CtaBand from "../../components/CtaBand.astro";
+import { site } from "../../data/site";
+---
+
+<BaseLayout title="Vietnam Entry Decision Gate Checklist" description="A practical checklist for foreign founders and investors evaluating Vietnam entry.">
+  <section class="resource-hero">
+    <img src="/images/post-02-market-access-gate-integrated.png" alt="Vietnam market access gate visual" />
+    <div class="overlay"></div>
+    <div class="container content">
+      <p class="eyebrow">Free resource</p>
+      <h1>Vietnam Entry Decision Gate Checklist</h1>
+      <p class="lead">
+        A plain-English checklist for testing business line, entry route, location, capital path, property, advisers, and first-100-days controls before you commit.
+      </p>
+      <a class="button gold" href={site.linkedinUrl} target="_blank" rel="noreferrer">Message Les on LinkedIn for the checklist</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid three">
+      <article class="card">
+        <p class="eyebrow">Gate 01</p>
+        <h3>Activity and access</h3>
+        <p>Clarify the real business activity, ownership questions, license route, and local confirmation needed before setup.</p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">Gate 02</p>
+        <h3>Site and partners</h3>
+        <p>Pressure-test property, province, landlord, supplier, agent, and adviser assumptions before trust becomes dependency.</p>
+      </article>
+      <article class="card">
+        <p class="eyebrow">Gate 03</p>
+        <h3>Capital and control</h3>
+        <p>Map money movement, documents, responsibilities, reporting cadence, and owner-independent workflow before launch.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section dark-band">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">What it is for</p>
+        <h2>Use it before the first serious meeting.</h2>
+      </div>
+      <p class="lead">
+        The checklist is not a substitute for licensed local advice. It is a preparation tool so you can brief lawyers, accountants, agents, partners, and banks with better questions and fewer blind spots.
+      </p>
+    </div>
+  </section>
+
+  <CtaBand title="Want the checklist and a second set of eyes?" text="Message Les on LinkedIn with the business activity you are evaluating and the decision you are trying to make next." />
+</BaseLayout>
+
+<style>
+  .resource-hero {
+    position: relative;
+    min-height: 720px;
+    display: grid;
+    align-items: end;
+    overflow: hidden;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 96px 0;
+  }
+
+  .resource-hero > img,
+  .overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .resource-hero > img {
+    object-fit: cover;
+    opacity: 0.42;
+  }
+
+  .overlay {
+    background: linear-gradient(90deg, rgba(17, 17, 17, 0.95), rgba(17, 17, 17, 0.64));
+  }
+
+  .content {
+    position: relative;
+    display: grid;
+    gap: 22px;
+  }
+
+  h1 {
+    color: var(--paper);
+  }
+
+  .lead {
+    color: rgba(243, 239, 231, 0.86);
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 52px;
+    align-items: center;
+  }
+
+  @media (max-width: 860px) {
+    .split {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

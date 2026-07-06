@@ -1,0 +1,72 @@
+---
+import { offers } from "../data/site";
+---
+
+<div class="grid two offer-grid">
+  {
+    offers.map((offer) => (
+      <article class="offer-card card">
+        <p class="eyebrow">{offer.eyebrow}</p>
+        <h3>{offer.title}</h3>
+        <p>{offer.summary}</p>
+        <dl>
+          <div>
+            <dt>Format</dt>
+            <dd>{offer.duration}</dd>
+          </div>
+          <div>
+            <dt>Test price</dt>
+            <dd>{offer.price}</dd>
+          </div>
+        </dl>
+        <ul>
+          {offer.bullets.map((bullet) => <li>{bullet}</li>)}
+        </ul>
+        <p class="best-for"><strong>Best for:</strong> {offer.bestFor}</p>
+      </article>
+    ))
+  }
+</div>
+
+<style>
+  .offer-card {
+    display: grid;
+    gap: 14px;
+  }
+
+  .offer-card p,
+  .offer-card ul,
+  .offer-card dl {
+    margin: 0;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  dt {
+    color: var(--muted);
+    font-family: "IBM Plex Mono", Consolas, monospace;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 4px 0 0;
+    color: var(--steel);
+    font-weight: 800;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  .best-for {
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+    color: var(--steel);
+  }
+</style>

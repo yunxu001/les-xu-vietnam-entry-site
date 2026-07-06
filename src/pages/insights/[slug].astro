@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CtaBand from "../../components/CtaBand.astro";
+
+export async function getStaticPaths() {
+  const posts = await Astro.glob("../../content/insights/*.md");
+  return posts.map((post) => {
+    const slug = post.file.split(/[\\/]/).pop()?.replace(/\.md$/, "") ?? "";
+    return {
+      params: { slug },
+      props: { post }
+    };
+  });
+}
+
+const { post } = Astro.props;
+const Content = post.Content;
+---
+
+<BaseLayout title={post.frontmatter.title} description={post.frontmatter.description} image={post.frontmatter.image}>
+  <section class="article-hero dark-band">
+    <div class="container article-hero-grid">
+      <div>
+        <p class="eyebrow">{post.frontmatter.category}</p>
+        <h1>{post.frontmatter.title}</h1>
+        <p class="lead">{post.frontmatter.description}</p>
+        <span>{post.frontmatter.readTime}</span>
+      </div>
+      <div class="media-frame">
+        <img src={post.frontmatter.image} alt={post.frontmatter.title} />
+      </div>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <Content />
+  </article>
+
+  <CtaBand />
+</BaseLayout>
+
+<style>
+  .article-hero {
+    padding: 96px 0 72px;
+  }
+
+  .article-hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .article-hero span {
+    color: var(--gold);
+    font-weight: 900;
+  }
+
+  @media (max-width: 860px) {
+    .article-hero-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

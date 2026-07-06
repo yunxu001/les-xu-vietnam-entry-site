@@ -1,0 +1,51 @@
+---
+import { site } from "../data/site";
+---
+
+<footer class="site-footer">
+  <div>
+    <strong>{site.name}</strong>
+    <p>{site.description}</p>
+  </div>
+  <div class="footer-links">
+    <a href="/advisory">Advisory</a>
+    <a href="/insights">Insights</a>
+    <a href="/about">About</a>
+    <a href={site.linkedinUrl} target="_blank" rel="noreferrer">LinkedIn</a>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+    padding: 40px 24px;
+    border-top: 1px solid rgba(17, 17, 17, 0.12);
+    background: var(--paper);
+  }
+
+  p {
+    max-width: 620px;
+    color: var(--muted);
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: var(--steel);
+    font-weight: 800;
+  }
+
+  a:hover {
+    color: var(--red);
+  }
+
+  @media (max-width: 760px) {
+    .site-footer {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

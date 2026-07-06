@@ -1,0 +1,49 @@
+---
+import { proofPoints } from "../data/site";
+---
+
+<section class="proof-strip">
+  <div class="container proof-inner">
+    <p class="eyebrow">Why this angle is credible</p>
+    <div class="proof-list">
+      {proofPoints.map((point) => <span>{point}</span>)}
+    </div>
+  </div>
+</section>
+
+<style>
+  .proof-strip {
+    border-top: 1px solid rgba(243, 239, 231, 0.18);
+    border-bottom: 1px solid rgba(243, 239, 231, 0.18);
+    background: var(--ink);
+    color: var(--paper);
+    padding: 24px 0;
+  }
+
+  .proof-inner {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .proof-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  span {
+    border: 1px solid rgba(243, 239, 231, 0.18);
+    border-radius: 999px;
+    padding: 8px 12px;
+    color: rgba(243, 239, 231, 0.88);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 760px) {
+    .proof-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

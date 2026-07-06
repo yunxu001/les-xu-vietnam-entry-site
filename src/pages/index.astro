@@ -1,0 +1,176 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaBand from "../components/CtaBand.astro";
+import InsightCards from "../components/InsightCards.astro";
+import OfferCards from "../components/OfferCards.astro";
+import ProcessSteps from "../components/ProcessSteps.astro";
+import ProofStrip from "../components/ProofStrip.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Vietnam Entry Advisory" description={site.description}>
+  <section class="hero">
+    <img src="/images/post-01-vietnam-not-shortcut-integrated.png" alt="Vietnam market-entry decision map and advisory checkpoints" />
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">Vietnam entry and owner-independent operations</p>
+      <h1>Sequence Vietnam before the first wire.</h1>
+      <p class="lead">
+        {site.description} The goal is not more hype. The goal is a calmer order of decisions before leases, licensing paths, partners, capital, and daily operations start pulling you forward.
+      </p>
+      <div class="button-row">
+        <a class="button gold" href={site.linkedinUrl} target="_blank" rel="noreferrer">{site.primaryCta}</a>
+        <a class="button secondary hero-secondary" href="/advisory">See advisory offers</a>
+      </div>
+    </div>
+  </section>
+
+  <ProofStrip />
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Point of view</p>
+        <h2>Vietnam is attractive. It is not automatic.</h2>
+      </div>
+      <div>
+        <p class="lead">
+          Many first-time entrants start with the visible question: company setup, rent, labour, a local agent, a cheap factory, or a promising introduction.
+        </p>
+        <p>
+          Les starts earlier: what activity are you really doing, which gates need confirmation, what location fits the operating model, how will capital move, who owns each approval, and what system keeps the owner out of the daily mess?
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-band">
+    <div class="container section-heading">
+      <p class="eyebrow">Productized advisory</p>
+      <h2>Four ways to turn uncertainty into a decision sequence.</h2>
+    </div>
+    <div class="container">
+      <OfferCards />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Operating method</p>
+        <h2>Decision gates before action lists.</h2>
+      </div>
+      <p class="lead">
+        The work is practical: narrow the activity, expose the gates, sequence the first moves, then build enough operating control that the business does not depend on daily owner heroics.
+      </p>
+    </div>
+    <div class="container">
+      <ProcessSteps />
+    </div>
+  </section>
+
+  <section class="section visual-section">
+    <div class="container visual-grid">
+      <div class="media-frame">
+        <img src="/images/post-12-first-100-days-integrated.png" alt="First 100 days Vietnam entry planning checklist" />
+      </div>
+      <div>
+        <p class="eyebrow">First screen proof</p>
+        <h2>Built from the Vietnam Entry Playbook.</h2>
+        <p class="lead">
+          The site is connected to a larger content engine: 12 advisory topics covering market access, entry routes, timelines, province selection, incentives, capital flow, factory decisions, compliance traps, cash flow, China plus one, and the first 100 days.
+        </p>
+        <a class="button secondary" href="/insights">Read the insights</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="container section-heading">
+      <p class="eyebrow">Latest thinking</p>
+      <h2>Start with the gates most founders underestimate.</h2>
+    </div>
+    <div class="container">
+      <InsightCards />
+    </div>
+  </section>
+
+  <CtaBand />
+</BaseLayout>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: calc(100vh - 82px);
+    display: grid;
+    align-items: end;
+    overflow: hidden;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 96px 0;
+  }
+
+  .hero > img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.46;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(17, 17, 17, 0.95), rgba(17, 17, 17, 0.68) 50%, rgba(17, 17, 17, 0.2));
+  }
+
+  .hero-content {
+    position: relative;
+    display: grid;
+    gap: 24px;
+  }
+
+  .hero h1 {
+    color: var(--paper);
+  }
+
+  .hero .lead {
+    color: rgba(243, 239, 231, 0.86);
+  }
+
+  .hero-secondary {
+    border-color: rgba(243, 239, 231, 0.5);
+    color: var(--paper);
+  }
+
+  .split,
+  .visual-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 52px;
+    align-items: center;
+  }
+
+  .section-heading {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+
+  .visual-section {
+    background: #e8e1d5;
+  }
+
+  @media (max-width: 860px) {
+    .hero {
+      min-height: 760px;
+      padding: 72px 0;
+    }
+
+    .split,
+    .visual-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

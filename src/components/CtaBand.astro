@@ -1,0 +1,51 @@
+---
+import { site } from "../data/site";
+
+interface Props {
+  title?: string;
+  text?: string;
+}
+
+const {
+  title = "Before Vietnam becomes a project, test the sequence.",
+  text = "Use the Reality Check to expose early market-access, property, capital, partner, and operating risks before they become expensive momentum."
+} = Astro.props;
+---
+
+<section class="cta-band dark-band">
+  <div class="container cta-inner">
+    <div>
+      <p class="eyebrow">Start with discipline</p>
+      <h2>{title}</h2>
+      <p class="lead">{text}</p>
+    </div>
+    <div class="button-row">
+      <a class="button gold" href={site.linkedinUrl} target="_blank" rel="noreferrer">{site.primaryCta}</a>
+      <a class="button secondary light" href="/resources/vietnam-entry-decision-gate-checklist">{site.secondaryCta}</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-band {
+    padding: 72px 0;
+  }
+
+  .cta-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: end;
+  }
+
+  .light {
+    border-color: rgba(243, 239, 231, 0.36);
+    color: var(--paper);
+  }
+
+  @media (max-width: 860px) {
+    .cta-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

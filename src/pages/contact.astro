@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout title="Contact Les Xu" description="Contact Les Xu for Vietnam entry and owner-independent operations advisory.">
+  <section class="contact-hero dark-band">
+    <div class="container contact-grid">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Send the decision you are trying to make next.</h1>
+        <p class="lead">
+          For v1, LinkedIn is the contact channel. Share the business activity, target city or province, current stage, and the commitment you are considering.
+        </p>
+        <div class="button-row">
+          <a class="button gold" href={site.linkedinUrl} target="_blank" rel="noreferrer">{site.primaryCta}</a>
+          <a class="button secondary light" href="/resources/vietnam-entry-decision-gate-checklist">{site.secondaryCta}</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <p class="eyebrow">Useful message format</p>
+        <ul>
+          <li>What business activity are you evaluating?</li>
+          <li>Are you exploring, negotiating, or already operating?</li>
+          <li>Which decision feels expensive if wrong?</li>
+          <li>Who else is already involved?</li>
+          <li>What do you need within the next 30 days?</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-hero {
+    min-height: calc(100vh - 82px);
+    display: grid;
+    align-items: center;
+    padding: 96px 0;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.75fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .contact-card {
+    border: 1px solid rgba(243, 239, 231, 0.18);
+    border-radius: 8px;
+    padding: 28px;
+    background: rgba(243, 239, 231, 0.06);
+  }
+
+  li {
+    margin-bottom: 10px;
+    color: rgba(243, 239, 231, 0.86);
+  }
+
+  .light {
+    border-color: rgba(243, 239, 231, 0.36);
+    color: var(--paper);
+  }
+
+  @media (max-width: 860px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
