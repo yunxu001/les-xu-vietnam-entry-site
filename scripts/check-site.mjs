@@ -50,7 +50,12 @@ if (!existsSync(dist)) {
     failures.push("old public name found: Yun Xu");
   }
 
-  if (combined.includes("TBD") || combined.includes("TODO") || combined.includes("#")) {
+  if (
+    combined.includes("TBD") ||
+    combined.includes("TODO") ||
+    combined.includes('href="#"') ||
+    combined.includes("href='#'")
+  ) {
     failures.push("placeholder text or placeholder links found");
   }
 }

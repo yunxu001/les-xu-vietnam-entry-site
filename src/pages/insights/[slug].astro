@@ -1,33 +1,31 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CtaBand from "../../components/CtaBand.astro";
+import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob("../../content/insights/*.md");
-  return posts.map((post) => {
-    const slug = post.file.split(/[\\/]/).pop()?.replace(/\.md$/, "") ?? "";
-    return {
-      params: { slug },
-      props: { post }
-    };
-  });
+  const posts = await getCollection("insights");
+  return posts.map((post) => ({
+    params: { slug: post.id.replace(/\.md$/, "") },
+    props: { post }
+  }));
 }
 
 const { post } = Astro.props;
-const Content = post.Content;
+const { Content } = await render(post);
 ---
 
-<BaseLayout title={post.frontmatter.title} description={post.frontmatter.description} image={post.frontmatter.image}>
+<BaseLayout title={post.data.title} description={post.data.description} image={post.data.image}>
   <section class="article-hero dark-band">
     <div class="container article-hero-grid">
       <div>
-        <p class="eyebrow">{post.frontmatter.category}</p>
-        <h1>{post.frontmatter.title}</h1>
-        <p class="lead">{post.frontmatter.description}</p>
-        <span>{post.frontmatter.readTime}</span>
+        <p class="eyebrow">{post.data.category}</p>
+        <h1>{post.data.title}</h1>
+        <p class="lead">{post.data.description}</p>
+        <span>{post.data.readTime}</span>
       </div>
       <div class="media-frame">
-        <img src={post.frontmatter.image} alt={post.frontmatter.title} />
+        <img src={post.data.image} alt={post.data.title} />
       </div>
     </div>
   </section>

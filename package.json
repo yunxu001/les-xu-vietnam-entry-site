@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
+    "dev": "node scripts/astro-command.mjs dev",
+    "build": "node scripts/astro-command.mjs build",
+    "preview": "node scripts/astro-command.mjs preview",
     "check:source": "node scripts/check-source.mjs",
     "check:site": "node scripts/check-site.mjs"
   },

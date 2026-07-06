@@ -1,11 +1,12 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
 
-const posts = (await Astro.glob("../../content/insights/*.md")).sort(
-  (a, b) => (a.frontmatter.order ?? 99) - (b.frontmatter.order ?? 99)
+const posts = (await getCollection("insights")).sort(
+  (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99)
 );
 
-const slugFor = (file: string) => file.split(/[\\/]/).pop()?.replace(/\.md$/, "") ?? "";
+const slugFor = (id: string) => id.replace(/\.md$/, "");
 ---
 
 <BaseLayout title="Vietnam Entry Insights" description="Vietnam Entry Playbook insights from Les Xu.">
@@ -23,13 +24,13 @@ const slugFor = (file: string) => file.split(/[\\/]/).pop()?.replace(/\.md$/, ""
     <div class="container post-grid">
       {
         posts.map((post) => (
-          <a class="post-card" href={`/insights/${slugFor(post.file)}`}>
-            <img src={post.frontmatter.image} alt={post.frontmatter.title} />
+          <a class="post-card" href={`/insights/${slugFor(post.id)}`}>
+            <img src={post.data.image} alt={post.data.title} />
             <div>
-              <p class="eyebrow">{post.frontmatter.category}</p>
-              <h2>{post.frontmatter.title}</h2>
-              <p>{post.frontmatter.description}</p>
-              <span>{post.frontmatter.readTime}</span>
+              <p class="eyebrow">{post.data.category}</p>
+              <h2>{post.data.title}</h2>
+              <p>{post.data.description}</p>
+              <span>{post.data.readTime}</span>
             </div>
           </a>
         ))
