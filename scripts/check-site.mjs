@@ -8,6 +8,12 @@ const requiredRoutes = [
   "index.html",
   "advisory/index.html",
   "insights/index.html",
+  "insights/foreigners-start-business-vietnam/index.html",
+  "insights/vietnam-company-setup-first-100-days/index.html",
+  "insights/vietnam-market-entry-checklist/index.html",
+  "insights/vietnam-lease-license-capital-sequence/index.html",
+  "insights/china-plus-one-vietnam-sme-guide/index.html",
+  "insights/da-nang-vs-ho-chi-minh-business-entry/index.html",
   "resources/vietnam-entry-decision-gate-checklist/index.html",
   "about/index.html",
   "contact/index.html"
@@ -41,7 +47,9 @@ if (!existsSync(dist)) {
     "WhatsApp",
     "WeChat",
     "Zalo",
-    "Vietnam Entry Decision Gate Checklist"
+    "Vietnam Entry Decision Gate Checklist",
+    "Can foreigners start a business in Vietnam?",
+    "China plus one"
   ];
 
   for (const text of mustInclude) {

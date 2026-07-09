@@ -157,31 +157,45 @@ export const faqs = [
 
 export const insightLinks = [
   {
-    title: "Vietnam Is Not A Shortcut",
-    slug: "vietnam-is-not-a-shortcut",
-    category: "Entry Strategy",
+    title: "Can foreigners start a business in Vietnam?",
+    slug: "foreigners-start-business-vietnam",
+    category: "GEO Guide",
     description:
-      "Why the opportunity is real, but the sequence matters more than the headline."
+      "The answer depends on activity, market access, route, location, capital, and approvals."
   },
   {
-    title: "A Lease Is Not A License",
-    slug: "lease-is-not-a-license",
-    category: "Property",
+    title: "Vietnam company setup: the first 100 days",
+    slug: "vietnam-company-setup-first-100-days",
+    category: "GEO Guide",
     description:
-      "The site can look right while the approval path is still incomplete."
+      "A practical setup sequence that turns registration into operating control."
   },
   {
-    title: "Capital Needs A Legal Route",
-    slug: "capital-needs-a-legal-route",
-    category: "Capital Flow",
+    title: "Vietnam market entry checklist",
+    slug: "vietnam-market-entry-checklist",
+    category: "GEO Guide",
     description:
-      "Why bank accounts, contribution timing, documentation, and remittance planning belong early."
+      "A plain-English screen before signing, wiring, hiring, leasing, or committing."
   },
   {
-    title: "The First 100 Days Checklist",
-    slug: "first-100-days-checklist",
-    category: "Execution",
+    title: "Vietnam lease, license, and capital sequence",
+    slug: "vietnam-lease-license-capital-sequence",
+    category: "GEO Guide",
     description:
-      "A practical control rhythm for founders before and after the first commitment."
+      "Why site, approvals, and money movement should be sequenced together."
+  },
+  {
+    title: "China plus one Vietnam guide for SME owners",
+    slug: "china-plus-one-vietnam-sme-guide",
+    category: "GEO Guide",
+    description:
+      "A practical guide for sourcing, manufacturing, partners, and owner control."
+  },
+  {
+    title: "Da Nang vs Ho Chi Minh City for Vietnam business entry",
+    slug: "da-nang-vs-ho-chi-minh-business-entry",
+    category: "GEO Guide",
+    description:
+      "A city comparison based on customers, talent, site, lifestyle, and control."
   }
 ];

@@ -16,7 +16,7 @@ const { Content } = await render(post);
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description} image={post.data.image}>
-  <section class="article-hero dark-band">
+  <section class="article-hero">
     <div class="container article-hero-grid">
       <div>
         <p class="eyebrow">{post.data.category}</p>
@@ -40,6 +40,8 @@ const { Content } = await render(post);
 <style>
   .article-hero {
     padding: 96px 0 72px;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
   }
 
   .article-hero-grid {
@@ -50,7 +52,7 @@ const { Content } = await render(post);
   }
 
   .article-hero span {
-    color: var(--gold);
+    color: var(--red);
     font-weight: 900;
   }
 

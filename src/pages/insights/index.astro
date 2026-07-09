@@ -10,7 +10,7 @@ const slugFor = (id: string) => id.replace(/\.md$/, "");
 ---
 
 <BaseLayout title="Vietnam Entry Insights" description="Vietnam Entry Playbook insights from Les Xu.">
-  <section class="page-hero dark-band">
+  <section class="page-hero">
     <div class="container">
       <p class="eyebrow">Insights</p>
       <h1>Vietnam Entry Playbook</h1>
@@ -42,6 +42,8 @@ const slugFor = (id: string) => id.replace(/\.md$/, "");
 <style>
   .page-hero {
     padding: 104px 0 72px;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
   }
 
   .page-hero .container {

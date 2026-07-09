@@ -7,6 +7,7 @@
     "dev": "node scripts/astro-command.mjs dev",
     "build": "node scripts/astro-command.mjs build",
     "preview": "node scripts/astro-command.mjs preview",
+    "content:drafts": "node scripts/generate-content-drafts.mjs",
     "check:source": "node scripts/check-source.mjs",
     "check:site": "node scripts/check-site.mjs"
   },

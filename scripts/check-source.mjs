@@ -17,7 +17,14 @@ const requiredFiles = [
   "public/images/zalo-qr.jpg",
   "public/images/post-01-vietnam-not-shortcut-integrated.png",
   "public/images/post-02-market-access-gate-integrated.png",
-  "public/images/post-12-first-100-days-integrated.png"
+  "public/images/post-12-first-100-days-integrated.png",
+  "src/content/insights/foreigners-start-business-vietnam.md",
+  "src/content/insights/vietnam-company-setup-first-100-days.md",
+  "src/content/insights/vietnam-market-entry-checklist.md",
+  "src/content/insights/vietnam-lease-license-capital-sequence.md",
+  "src/content/insights/china-plus-one-vietnam-sme-guide.md",
+  "src/content/insights/da-nang-vs-ho-chi-minh-business-entry.md",
+  "scripts/generate-content-drafts.mjs"
 ];
 
 const failures = [];
@@ -47,7 +54,9 @@ const requiredText = [
   "WhatsApp",
   "WeChat",
   "Zalo",
-  "Vietnam Entry Decision Gate Checklist"
+  "Vietnam Entry Decision Gate Checklist",
+  "foreigners-start-business-vietnam",
+  "content:drafts"
 ];
 
 for (const text of requiredText) {
