@@ -4,19 +4,39 @@ export const site = {
   shortTagline: "Sequence Vietnam entry before money moves.",
   description:
     "Les Xu helps foreign founders, SME owners, and investors evaluate Vietnam, sequence entry decisions, and build owner-independent operating systems.",
-  linkedinUrl: "https://www.linkedin.com/in/leslie-xu-43a57413/",
   primaryCta: "Book a Vietnam Entry Reality Check",
   secondaryCta: "Get the Vietnam Entry Decision Gate Checklist"
 };
 
 export const colors = {
   ink: "#111111",
-  paper: "#F3EFE7",
-  red: "#D62828",
+  paper: "#F7F4EF",
+  red: "#C4332A",
   green: "#2E7D5B",
   gold: "#D6A23A",
   steel: "#27323A"
 };
+
+export const contactMethods = [
+  {
+    name: "WhatsApp",
+    image: "/images/whatsapp-qr.jpg",
+    instruction: "Scan to add Les on WhatsApp.",
+    note: "Best for English-language advisory enquiries and fast follow-up."
+  },
+  {
+    name: "WeChat",
+    image: "/images/wechat-qr.jpg",
+    instruction: "Scan to add Les on WeChat.",
+    note: "Best for Chinese-language founder, investor, and China plus one conversations."
+  },
+  {
+    name: "Zalo",
+    image: "/images/zalo-qr.jpg",
+    instruction: "Scan to add Les on Zalo.",
+    note: "Best for Vietnam-based contacts, operators, and local coordination."
+  }
+];
 
 export const proofPoints = [
   "SME banking and commercial credit judgment",

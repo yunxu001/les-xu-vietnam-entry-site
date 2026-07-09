@@ -1,16 +1,16 @@
 :root {
   --ink: #111111;
-  --paper: #f3efe7;
-  --red: #d62828;
+  --paper: #f7f4ef;
+  --red: #c4332a;
   --green: #2e7d5b;
   --gold: #d6a23a;
   --steel: #27323a;
-  --muted: #6c675e;
-  --line: rgba(17, 17, 17, 0.14);
-  --white: #fffaf0;
+  --muted: #68645f;
+  --line: rgba(17, 17, 17, 0.12);
+  --white: #ffffff;
   color: var(--ink);
   background: var(--paper);
-  font-family: Arial, Aptos, system-ui, sans-serif;
+  font-family: Inter, Arial, Aptos, system-ui, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -22,6 +22,7 @@
 body {
   margin: 0;
   background: var(--paper);
+  color: var(--ink);
 }
 
 img {
@@ -44,24 +45,24 @@ li {
 }
 
 .container {
-  width: min(1120px, calc(100% - 32px));
+  width: min(980px, calc(100% - 32px));
   margin: 0 auto;
 }
 
 .section {
-  padding: 88px 0;
+  padding: 72px 0;
 }
 
 .section.tight {
-  padding: 56px 0;
+  padding: 44px 0;
 }
 
 .eyebrow {
   color: var(--red);
-  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-family: Consolas, "IBM Plex Mono", monospace;
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -70,20 +71,20 @@ h2,
 h3 {
   margin: 0;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Inter, Arial, Aptos, system-ui, sans-serif;
   letter-spacing: 0;
 }
 
 h1 {
-  font-size: clamp(3rem, 7vw, 6.8rem);
-  line-height: 0.92;
-  max-width: 880px;
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  line-height: 0.96;
+  max-width: 780px;
 }
 
 h2 {
-  font-size: clamp(2.2rem, 4vw, 4.4rem);
-  line-height: 0.98;
-  max-width: 780px;
+  font-size: clamp(1.9rem, 4vw, 3.4rem);
+  line-height: 1.02;
+  max-width: 720px;
 }
 
 h3 {
@@ -93,8 +94,8 @@ h3 {
 
 .lead {
   color: var(--steel);
-  font-size: clamp(1.08rem, 2vw, 1.35rem);
-  max-width: 700px;
+  font-size: clamp(1.05rem, 2vw, 1.24rem);
+  max-width: 680px;
 }
 
 .button-row {
@@ -110,7 +111,7 @@ h3 {
   justify-content: center;
   min-height: 48px;
   border: 1px solid var(--ink);
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 12px 18px;
   background: var(--ink);
   color: var(--paper);
@@ -148,7 +149,7 @@ h3 {
 .card {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 250, 240, 0.64);
+  background: var(--white);
   padding: 24px;
 }
 
@@ -169,9 +170,9 @@ h3 {
 
 .media-frame {
   overflow: hidden;
-  border: 1px solid rgba(243, 239, 231, 0.18);
+  border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--ink);
+  background: var(--white);
 }
 
 .media-frame img {

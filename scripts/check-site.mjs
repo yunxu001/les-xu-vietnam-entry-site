@@ -38,7 +38,9 @@ if (!existsSync(dist)) {
   const mustInclude = [
     "Les Xu",
     "Book a Vietnam Entry Reality Check",
-    "https://www.linkedin.com/in/leslie-xu-43a57413/",
+    "WhatsApp",
+    "WeChat",
+    "Zalo",
     "Vietnam Entry Decision Gate Checklist"
   ];
 
@@ -48,6 +50,10 @@ if (!existsSync(dist)) {
 
   if (combined.includes("Yun Xu")) {
     failures.push("old public name found: Yun Xu");
+  }
+
+  if (/linkedin/i.test(combined)) {
+    failures.push("LinkedIn reference found");
   }
 
   if (

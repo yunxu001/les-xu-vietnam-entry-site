@@ -10,14 +10,12 @@ npm run build
 npm run check:site
 ```
 
-`npm run check:source` runs without downloaded dependencies and verifies the expected routes, public name, CTA text, LinkedIn URL, and copied imagery exist in source.
+`npm run check:source` runs without downloaded dependencies and verifies the expected routes, public name, CTA text, QR contact assets, and copied imagery exist in source.
 
 ## Current Contact CTA
 
-All booking/contact calls route to LinkedIn:
-
-https://www.linkedin.com/in/leslie-xu-43a57413/
+All booking/contact calls route to the contact page, where visitors can scan WhatsApp, WeChat, or Zalo QR codes.
 
 ## Visual Direction
 
-The site uses the existing Vietnam Entry Playbook visual system: premium investigative business briefing, warm paper, ink black, signal red, Mekong green, investment gold, steel blue grey, and practical advisory imagery.
+The site uses a clean personal-authority visual system: warm paper, black type, restrained red accents, simple cards, and direct QR-led contact.

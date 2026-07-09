@@ -12,6 +12,9 @@ const requiredFiles = [
   "src/pages/contact.astro",
   "src/data/site.ts",
   "src/styles/global.css",
+  "public/images/whatsapp-qr.jpg",
+  "public/images/wechat-qr.jpg",
+  "public/images/zalo-qr.jpg",
   "public/images/post-01-vietnam-not-shortcut-integrated.png",
   "public/images/post-02-market-access-gate-integrated.png",
   "public/images/post-12-first-100-days-integrated.png"
@@ -41,7 +44,9 @@ const combined = textFiles.map((file) => readFileSync(file, "utf8")).join("\n");
 const requiredText = [
   "Les Xu",
   "Book a Vietnam Entry Reality Check",
-  "https://www.linkedin.com/in/leslie-xu-43a57413/",
+  "WhatsApp",
+  "WeChat",
+  "Zalo",
   "Vietnam Entry Decision Gate Checklist"
 ];
 
@@ -50,6 +55,7 @@ for (const text of requiredText) {
 }
 
 if (combined.includes("Yun Xu")) failures.push("old public name found: Yun Xu");
+if (/linkedin/i.test(combined)) failures.push("LinkedIn reference found");
 if (combined.includes("TBD") || combined.includes("TODO")) {
   failures.push("placeholder marker found");
 }

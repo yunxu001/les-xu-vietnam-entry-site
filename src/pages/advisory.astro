@@ -26,7 +26,7 @@ import { site } from "../data/site";
     </div>
   </section>
 
-  <section class="section dark-band">
+  <section class="section method-section">
     <div class="container section-heading">
       <p class="eyebrow">How the work runs</p>
       <h2>A simple sequence, not a giant consulting theatre.</h2>
@@ -49,7 +49,7 @@ import { site } from "../data/site";
         <p>
           The work is to help you ask better questions, avoid weak sequencing, coordinate the right specialists, and turn scattered information into a practical operating plan.
         </p>
-        <a class="button" href={site.linkedinUrl} target="_blank" rel="noreferrer">{site.primaryCta}</a>
+        <a class="button" href="/contact">{site.primaryCta}</a>
       </div>
     </div>
   </section>
@@ -71,6 +71,12 @@ import { site } from "../data/site";
   .page-hero {
     padding: 104px 0 72px;
     background: var(--paper);
+  }
+
+  .method-section {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: #ffffff;
   }
 
   .split {

@@ -1,0 +1,60 @@
+---
+import { contactMethods } from "../data/site";
+---
+
+<div class="contact-methods">
+  {
+    contactMethods.map((method) => (
+      <article class="qr-card">
+        <div>
+          <p class="eyebrow">{method.name}</p>
+          <h3>{method.instruction}</h3>
+          <p>{method.note}</p>
+        </div>
+        <img src={method.image} alt={`${method.name} QR code for Les Xu`} loading="lazy" />
+      </article>
+    ))
+  }
+</div>
+
+<style>
+  .contact-methods {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .qr-card {
+    display: grid;
+    gap: 18px;
+    align-content: start;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 20px;
+    background: var(--white);
+  }
+
+  .qr-card h3 {
+    margin-top: 6px;
+  }
+
+  .qr-card p {
+    margin-bottom: 0;
+    color: var(--muted);
+  }
+
+  .qr-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1.2;
+    object-fit: contain;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: #ffffff;
+  }
+
+  @media (max-width: 900px) {
+    .contact-methods {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
