@@ -1,7 +1,5 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import CtaBand from "../../components/CtaBand.astro";
-import { site } from "../../data/site";
 ---
 
 <BaseLayout title="Vietnam Entry Decision Gate Checklist" description="A practical checklist for foreign founders and investors evaluating Vietnam entry.">
@@ -12,7 +10,7 @@ import { site } from "../../data/site";
       <p class="lead">
         A plain-English checklist for testing business line, entry route, location, capital path, property, advisers, and first-100-days controls before you commit.
       </p>
-      <a class="button" href="/contact">Message Les for the checklist</a>
+      <a class="button" href="/contact">Request the checklist</a>
     </div>
   </section>
 
@@ -48,7 +46,12 @@ import { site } from "../../data/site";
     </div>
   </section>
 
-  <CtaBand title="Want the checklist and a second set of eyes?" text="Message Les with the business activity you are evaluating and the decision you are trying to make next." />
+  <section class="section dark-band">
+    <div class="container cta">
+      <div><p class="eyebrow">Business Lens Advisory</p><h2>Want the checklist and a second set of eyes?</h2></div>
+      <a class="button gold" href="/contact">Start an enquiry</a>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -79,9 +82,13 @@ import { site } from "../../data/site";
     background: #ffffff;
   }
 
+  .cta { display: flex; justify-content: space-between; gap: 24px; align-items: end; }
+
   @media (max-width: 860px) {
     .split {
       grid-template-columns: 1fr;
     }
+
+    .cta { display: grid; align-items: start; }
   }
 </style>

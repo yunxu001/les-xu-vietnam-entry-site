@@ -1,112 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import CtaBand from "../components/CtaBand.astro";
-import { site } from "../data/site";
 ---
 
-<BaseLayout title="About Les Xu" description="About Les Xu, Vietnam entry and owner-independent operations advisor.">
-  <section class="page-hero">
-    <div class="container about-grid">
-      <div>
-        <p class="eyebrow">About Les Xu</p>
-        <h1>Operator first. Adviser second. That order matters.</h1>
-        <p class="lead">
-          Les brings together SME banking, credit analysis, business broking, law and finance training, wholesale operations, hospitality ownership, Vietnam-focused sourcing, and AI-enabled workflow work.
-        </p>
-      </div>
-      <div class="media-frame">
-        <img src="/images/post-08-factory-land-decisions-integrated.png" alt="Vietnam factory and property diligence visual" />
-      </div>
-    </div>
-  </section>
-
+<BaseLayout title="About" description="Meet the Business Lens Advisory co-founders.">
   <section class="section">
-    <div class="container timeline">
-      <article>
-        <span>Banking</span>
-        <h2>Credit and SME risk judgment</h2>
-        <p>Commercial lending, client relationships, credit review, branch performance, compliance, and business development built the base for practical risk thinking.</p>
-      </article>
-      <article>
-        <span>Broking</span>
-        <h2>Business-sale and negotiation lens</h2>
-        <p>Business broking sharpened the questions around value, buyer concerns, vendor readiness, transaction confidence, and how deals actually move.</p>
-      </article>
-      <article>
-        <span>Owner-operator</span>
-        <h2>Wholesale and hospitality reality</h2>
-        <p>Fresh and Chilled and KIN Cafe and Wine Bar added lived operating experience: suppliers, staff, service, leases, local marketing, costs, customers, and daily execution.</p>
-      </article>
-      <article>
-        <span>Vietnam advisory</span>
-        <h2>Market entry and owner-independent systems</h2>
-        <p>Today the work focuses on helping foreign founders and SME owners evaluate Vietnam and build calmer operating systems before complexity compounds.</p>
-      </article>
+    <div class="container moved">
+      <p class="eyebrow">Business Lens Advisory</p>
+      <h1>Meet the team.</h1>
+      <p class="lead">This page has moved to the new team introduction for Les Xu and Jeffrey Zhang.</p>
+      <a class="button gold" href="/team">Meet Les and Jeffrey</a>
     </div>
   </section>
-
-  <section class="section dark-band">
-    <div class="container split">
-      <div>
-        <p class="eyebrow">What Les is not selling</p>
-        <h2>No shortcut story. No easy-money pitch.</h2>
-      </div>
-      <p class="lead">
-        Vietnam can be a serious opportunity, but serious opportunity needs sequencing, confirmation, partner discipline, capital control, and operating rhythm. That is the lane.
-      </p>
-    </div>
-  </section>
-
-  <CtaBand title="Bring the project before the momentum gets expensive." text="A Reality Check gives you a practical decision sequence before leases, partners, capital, and setup work start moving." />
 </BaseLayout>
 
-<style>
-  .page-hero {
-    padding: 104px 0 72px;
-  }
-
-  .about-grid,
-  .split {
-    display: grid;
-    grid-template-columns: 1fr 0.92fr;
-    gap: 52px;
-    align-items: center;
-  }
-
-  .timeline {
-    display: grid;
-    gap: 28px;
-  }
-
-  .timeline article {
-    display: grid;
-    grid-template-columns: 180px 0.9fr 1fr;
-    gap: 24px;
-    border-top: 1px solid var(--line);
-    padding-top: 28px;
-  }
-
-  .timeline span {
-    color: var(--red);
-    font-family: "IBM Plex Mono", Consolas, monospace;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-
-  .timeline h2 {
-    font-size: clamp(1.8rem, 3vw, 2.8rem);
-  }
-
-  .timeline p {
-    margin: 0;
-    color: var(--steel);
-  }
-
-  @media (max-width: 900px) {
-    .about-grid,
-    .split,
-    .timeline article {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
+<style>.moved { display: grid; gap: 20px; min-height: 48vh; align-content: center; }</style>

@@ -1,88 +1,49 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ContactMethods from "../components/ContactMethods.astro";
-import { site } from "../data/site";
+import { services, socialLinks } from "../data/site";
 ---
 
-<BaseLayout title="Contact Les Xu" description="Contact Les Xu for Vietnam entry and owner-independent operations advisory.">
-  <section class="contact-hero">
+<BaseLayout title="Contact" description="Start an enquiry with Business Lens Advisory.">
+  <section class="section">
     <div class="container contact-grid">
       <div>
         <p class="eyebrow">Contact</p>
-        <h1>Send the decision you are trying to make next.</h1>
-        <p class="lead">
-          Scan WhatsApp, WeChat, or Zalo and send the business activity, target city or province, current stage, and the commitment you are considering.
-        </p>
-        <div class="button-row">
-          <a class="button" href="#qr-codes">{site.primaryCta}</a>
-          <a class="button secondary light" href="/resources/vietnam-entry-decision-gate-checklist">{site.secondaryCta}</a>
-        </div>
+        <h1>Tell us what is changing in the business.</h1>
+        <p class="lead">A short note is enough: the decision, the market, the people involved, and what would make the next 30 days useful.</p>
+        <form class="enquiry-form" name="business-lens-enquiry" method="post" action="/contact" data-netlify="true">
+          <input type="hidden" name="form-name" value="business-lens-enquiry" />
+          <label>Name<input name="name" autocomplete="name" required /></label>
+          <label>Email<input name="email" type="email" autocomplete="email" required /></label>
+          <label>Area<select name="interest">{services.map((service) => <option value={service.title}>{service.title}</option>)}<option value="Relocation planning">Relocation planning</option><option value="Other">Other</option></select></label>
+          <label>What would you like to work through?<textarea name="message" rows="5" required></textarea></label>
+          <button class="button gold" type="submit">Send enquiry</button>
+        </form>
       </div>
-      <div class="contact-card">
-        <p class="eyebrow">Useful message format</p>
-        <ul>
-          <li>What business activity are you evaluating?</li>
-          <li>Are you exploring, negotiating, or already operating?</li>
-          <li>Which decision feels expensive if wrong?</li>
-          <li>Who else is already involved?</li>
-          <li>What do you need within the next 30 days?</li>
-        </ul>
-      </div>
+      <aside class="contact-aside">
+        <p class="eyebrow">Follow the work</p>
+        <div class="socials">{socialLinks.map((link) => <a href={link.url} target="_blank" rel="noreferrer">{link.name}</a>)}</div>
+        <p>For a direct conversation, scan the appropriate QR code below.</p>
+      </aside>
     </div>
   </section>
-
-  <section id="qr-codes" class="section tight">
-    <div class="container section-heading">
-      <p class="eyebrow">Choose a channel</p>
-      <h2>WhatsApp, WeChat, and Zalo QR codes.</h2>
-    </div>
+  <section class="section tight">
     <div class="container">
+      <p class="eyebrow">Direct contact</p>
+      <h2>WhatsApp, WeChat, and Zalo.</h2>
       <ContactMethods />
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .contact-hero {
-    min-height: 620px;
-    display: grid;
-    align-items: center;
-    border-bottom: 1px solid var(--line);
-    padding: 96px 0;
-  }
-
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 1.05fr 0.75fr;
-    gap: 48px;
-    align-items: center;
-  }
-
-  .contact-card {
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 28px;
-    background: var(--white);
-  }
-
-  li {
-    margin-bottom: 10px;
-    color: var(--steel);
-  }
-
-  .light {
-    color: var(--ink);
-  }
-
-  .section-heading {
-    display: grid;
-    gap: 14px;
-    margin-bottom: 32px;
-  }
-
-  @media (max-width: 860px) {
-    .contact-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+  .contact-grid { display: grid; grid-template-columns: 1.1fr 0.7fr; gap: 56px; align-items: start; }
+  .enquiry-form { display: grid; gap: 14px; margin-top: 28px; }
+  label { display: grid; gap: 6px; color: var(--steel); font-size: 0.86rem; font-weight: 800; }
+  input, select, textarea { width: 100%; border: 1px solid var(--line); border-radius: 4px; padding: 11px 12px; background: var(--white); color: var(--ink); font: inherit; }
+  .contact-aside { display: grid; gap: 18px; border-top: 3px solid var(--red); padding-top: 16px; }
+  .contact-aside p { margin: 0; color: var(--steel); }
+  .socials { display: grid; gap: 8px; }
+  .socials a { color: var(--red); font-weight: 900; }
+  @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; gap: 32px; } }
 </style>

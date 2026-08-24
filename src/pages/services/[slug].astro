@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { services, site } from "../../data/site";
+
+export function getStaticPaths() {
+  return services.map((service) => ({ params: { slug: service.slug }, props: { service } }));
+}
+
+const { service } = Astro.props;
+const aiModules = [
+  "AI foundations for owners: pick a safe, high-value first use case and retain human review.",
+  "Research and source verification: build a repeatable way to check what AI returns.",
+  "Business content systems: turn one useful idea into articles, posts, scripts, and a newsletter section.",
+  "Images, decks, and visual brand: produce clearer supporting material without losing judgement.",
+  "Video and multilingual localisation: adapt useful expertise for different audiences and formats.",
+  "Website SEO and GEO: publish original, accessible answers with clear authorship and sources.",
+  "Private business memory: organise approved knowledge so a team is not constantly recreating answers.",
+  "Workflow implementation: map one process, test it, document it, and improve it with the people doing the work."
+];
+const formats = ["Owner briefing", "Team workshop", "Implementation cohort", "Self-paced learning", "Private team session"];
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    provider: { "@type": "Organization", name: site.advisoryName, url: site.url },
+    areaServed: ["Australia", "China", "Vietnam", "Southeast Asia"],
+    description: service.summary
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+      { "@type": "ListItem", position: 2, name: "Services", item: `${site.url}/services/` },
+      { "@type": "ListItem", position: 3, name: service.title, item: `${site.url}/services/${service.slug}/` }
+    ]
+  }
+];
+---
+
+<BaseLayout title={service.title} description={service.summary} schema={schema} image={service.slug === "ai-business-systems" ? "/images/ai-training-operating-system-hero.png" : undefined}>
+  <section class="section">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Business Lens Advisory</p>
+        <h1>{service.title}</h1>
+        <p class="lead">{service.detail}</p>
+        <p><strong>Best for:</strong> {service.bestFor}</p>
+        <p><strong>Led by:</strong> {service.lead}</p>
+        <a class="button gold" href="/contact">Discuss your situation</a>
+      </div>
+      {service.slug === "ai-business-systems" && <img class="hero-image" src="/images/ai-training-operating-system-hero.png" alt="AI operating system training workspace" />}
+    </div>
+  </section>
+
+  {service.slug === "ai-business-systems" && (
+    <>
+      <section class="section tight">
+        <div class="container">
+          <p class="eyebrow">Training and implementation</p>
+          <h2>Teach the team to use AI with judgement.</h2>
+          <div class="grid two modules">
+            {aiModules.map((module, index) => <article class="card"><span>{String(index + 1).padStart(2, "0")}</span><p>{module}</p></article>)}
+          </div>
+        </div>
+      </section>
+      <section class="section tight">
+        <div class="container card">
+          <h2>Ways to work together</h2>
+          <div class="formats">{formats.map((format) => <span>{format}</span>)}</div>
+          <p>Scope, timing, and format are agreed around the workflow and team involved. No tool is implemented without a clear owner and human review point.</p>
+        </div>
+      </section>
+    </>
+  )}
+</BaseLayout>
+
+<style>
+  .split { display: grid; grid-template-columns: 1fr 0.85fr; gap: 48px; align-items: center; }
+  .hero-image { border: 1px solid var(--line); border-radius: 8px; }
+  .modules article { display: grid; grid-template-columns: auto 1fr; gap: 14px; padding: 18px; }
+  .modules span { color: var(--red); font-family: Consolas, monospace; font-weight: 900; }
+  .modules p { margin: 0; color: var(--steel); }
+  .formats { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
+  .formats span { border: 1px solid var(--line); border-radius: 99px; padding: 7px 10px; font-weight: 700; }
+  @media (max-width: 860px) { .split { grid-template-columns: 1fr; gap: 28px; } }
+</style>

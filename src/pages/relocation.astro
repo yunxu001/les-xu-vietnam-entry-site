@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../data/site";
+
+const schema = { "@context": "https://schema.org", "@type": "Service", name: "Relocation planning and partner coordination", provider: { "@type": "Organization", name: site.advisoryName } };
+---
+
+<BaseLayout title="Relocation Planning" description="Practical relocation planning and partner coordination for Australia and Vietnam." schema={schema}>
+  <section class="section">
+    <div class="container relocation">
+      <p class="eyebrow">Supporting service</p>
+      <h1>Relocation planning, with business reality in view.</h1>
+      <p class="lead">For founders, owners, and families balancing a move with a business, team, property, or market-entry decision in Australia or Vietnam.</p>
+      <div class="card"><h2>Where we help</h2><ul><li>Clarify the move, operating, and family decisions that interact.</li><li>Build a practical preparation sequence and partner map.</li><li>Coordinate the right questions for licensed migration, legal, tax, property, and insurance professionals.</li></ul></div>
+      <p class="boundary">We do not provide migration, legal, tax, financial, or property advice. Those positions must be confirmed by properly licensed professionals.</p>
+      <a class="button gold" href="/contact">Start a relocation enquiry</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .relocation { display: grid; gap: 22px; max-width: 840px; }
+  .relocation .card { display: grid; gap: 8px; }
+  .relocation .card ul { margin: 0; padding-left: 20px; color: var(--steel); }
+  .boundary { color: var(--muted); font-size: 0.92rem; }
+</style>

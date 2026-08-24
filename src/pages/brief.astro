@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
+import { insightLinks, newsletter } from "../data/site";
+---
+
+<BaseLayout title="The Business Lens Brief" description={newsletter.description}>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Fortnightly newsletter</p>
+      <h1>The Business Lens Brief.</h1>
+      <p class="lead">{newsletter.description}</p>
+      <NewsletterForm source="brief-page" />
+      <p class="note">You will receive a confirmation email before being added. Choose the topics you want us to prioritise.</p>
+    </div>
+  </section>
+  <section class="section tight">
+    <div class="container">
+      <p class="eyebrow">From the library</p>
+      <div class="grid three">
+        {insightLinks.map((insight) => <a class="card" href={`/insights/${insight.slug}`}><p class="eyebrow">{insight.category}</p><h3>{insight.title}</h3><p>{insight.description}</p></a>)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .newsletter-form { margin-top: 28px; }
+  .note { color: var(--muted); font-size: 0.86rem; }
+  .card { display: grid; gap: 10px; }
+  .card p { margin: 0; color: var(--steel); }
+  .card .eyebrow { color: var(--red); }
+</style>

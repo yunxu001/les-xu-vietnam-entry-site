@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { featuredMedia, socialLinks, site } from "../data/site";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: featuredMedia.title,
+  description: featuredMedia.description,
+  url: featuredMedia.watchUrl,
+  embedUrl: featuredMedia.embedUrl,
+  publisher: { "@type": "Organization", name: site.name, url: site.url }
+};
+---
+
+<BaseLayout title="Watch" description="Curated Business Lens videos and commentary for SME owners." schema={schema}>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Business Lens with Les</p>
+      <h1>Ideas worth taking into the next meeting.</h1>
+      <p class="lead">We publish commentary around one anchor business question at a time, then adapt the useful parts for the channels where owners already spend time.</p>
+    </div>
+  </section>
+  <section class="section tight">
+    <div class="container media-frame video-frame">
+      <iframe src={featuredMedia.embedUrl} title={featuredMedia.title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container grid two">
+      <article class="card"><h2>What to expect</h2><p>Business judgement, practical AI systems, cross-border decisions, and people/operations. The work is specific enough to use, not broad motivational noise.</p></article>
+      <article class="card"><h2>Follow the channel</h2><div class="socials">{socialLinks.map((link) => <a href={link.url} target="_blank" rel="noreferrer">{link.name}</a>)}</div></article>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .video-frame { width: min(980px, calc(100% - 32px)); aspect-ratio: 16 / 9; }
+  iframe { width: 100%; height: 100%; border: 0; }
+  .card p { color: var(--steel); }
+  .socials { display: flex; flex-wrap: wrap; gap: 10px; }
+  .socials a { border-bottom: 1px solid var(--red); color: var(--red); font-weight: 800; }
+</style>

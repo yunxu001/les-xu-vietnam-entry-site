@@ -7,7 +7,16 @@ const insights = defineCollection({
     category: z.string(),
     readTime: z.string(),
     order: z.number(),
-    image: z.string()
+    image: z.string(),
+    author: z.string().default("Business Lens Advisory"),
+    pillar: z.string().default("Cross-border execution"),
+    publishedAt: z.string().optional(),
+    updatedAt: z.string().optional(),
+    videoUrl: z.string().url().optional(),
+    transcriptUrl: z.string().url().optional(),
+    platform: z.string().optional(),
+    cta: z.string().optional(),
+    sources: z.array(z.object({ name: z.string(), url: z.string().url() })).default([])
   })
 });
 

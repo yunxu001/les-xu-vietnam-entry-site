@@ -2,10 +2,11 @@
 import { site } from "../data/site";
 
 const nav = [
-  { href: "/advisory", label: "Advisory" },
+  { href: "/services", label: "Services" },
+  { href: "/watch", label: "Watch" },
   { href: "/insights", label: "Insights" },
-  { href: "/resources/vietnam-entry-decision-gate-checklist", label: "Checklist" },
-  { href: "/about", label: "About" },
+  { href: "/brief", label: "Brief" },
+  { href: "/team", label: "Team" },
   { href: "/contact", label: "Contact" }
 ];
 ---
@@ -13,12 +14,12 @@ const nav = [
 <header class="site-header">
   <a class="brand" href="/" aria-label={`${site.name} home`}>
     <span>{site.name}</span>
-    <small>Vietnam Entry Playbook</small>
+    <small>Business judgement, systems, and cross-border execution</small>
   </a>
   <nav aria-label="Primary navigation">
     {nav.map((item) => <a href={item.href}>{item.label}</a>)}
   </nav>
-  <a class="header-cta" href="/contact">{site.primaryCta}</a>
+  <a class="header-cta" href="/brief">{site.primaryCta}</a>
 </header>
 
 <style>
@@ -86,6 +87,16 @@ const nav = [
 
     nav {
       justify-content: flex-start;
+    }
+
+    .header-cta {
+      display: none;
+    }
+
+    .brand small,
+    nav a[href="/insights"],
+    nav a[href="/team"] {
+      display: none;
     }
   }
 </style>

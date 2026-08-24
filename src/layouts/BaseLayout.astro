@@ -8,16 +8,28 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
+  schema?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
 const {
   title = site.title,
   description = site.description,
-  image = "/images/post-01-vietnam-not-shortcut-integrated.png"
+  image = "/images/post-01-vietnam-not-shortcut-integrated.png",
+  schema = []
 } = Astro.props;
 
 const pageTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
-const canonical = new URL(Astro.url.pathname, Astro.site || "https://les-xu-vietnam-entry-site.local").toString();
+const canonical = new URL(Astro.url.pathname, Astro.site || site.url).toString();
+const socialImage = new URL(image, Astro.site || site.url).toString();
+const extraSchema = Array.isArray(schema) ? schema : [schema];
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: site.advisoryName,
+  url: site.url,
+  description: site.description
+};
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 ---
 
 <!doctype html>
@@ -29,10 +41,26 @@ const canonical = new URL(Astro.url.pathname, Astro.site || "https://les-xu-viet
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={canonical} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify([organizationSchema, ...extraSchema])} />
+    {gaMeasurementId && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}></script>
+        <script define:vars={{ gaMeasurementId }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { window.dataLayer.push(arguments); }
+          gtag("js", new Date());
+          gtag("config", gaMeasurementId);
+        </script>
+      </>
+    )}
   </head>
   <body>
     <div class="page-shell">

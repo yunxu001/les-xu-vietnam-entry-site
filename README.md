@@ -1,28 +1,32 @@
-# Les Xu Vietnam Entry Advisory Site
+# Business Lens with Les
 
-Static Astro site for Les Xu's Vietnam entry and owner-independent operations advisory offer.
+Static Astro site for **Business Lens with Les** and the provisional consulting practice **Business Lens Advisory**, co-founded by Les Xu and Jeffrey Zhang.
 
-## Local Commands
+## Local commands
 
 ```bash
 npm install
 npm run build
+npm run check:source
 npm run check:site
 npm run content:drafts
+npm run content:youtube
 ```
 
-`npm run check:source` runs without downloaded dependencies and verifies the expected routes, public name, CTA text, QR contact assets, and copied imagery exist in source.
+`npm run build` generates the sitemap before Astro builds the site. `npm run content:drafts` turns the published insight library into review-ready website, LinkedIn, X, newsletter, and short-video drafts. It never publishes content, sends DMs, or participates in communities automatically.
 
-## Current Contact CTA
+## Newsletter and analytics setup
 
-All booking/contact calls route to the contact page, where visitors can scan WhatsApp, WeChat, or Zalo QR codes.
+Set `PUBLIC_KIT_FORM_ACTION` to the Kit form action after creating a Business Lens Brief form with double opt-in and interest tags. Until then, the embedded form is captured by Netlify Forms.
 
-## Content Engine
+Set `PUBLIC_GA_MEASUREMENT_ID` to activate GA4. Add Search Console and Bing verification tokens in the hosting configuration, then submit individual new public URLs with:
 
-Run `npm run content:drafts` after adding or editing insight pages. It generates a weekly content calendar, professional social post drafts, WeChat short essays, and Zalo contact notes in `content-output/`.
+```bash
+npm run indexnow:submit -- https://business-lens-with-les.netlify.app/insights/example/
+```
 
-Drafts are preparation assets only. Review and approve them manually before posting or messaging from any personal account.
+The public IndexNow verification file is in `public/`. Add the site to Google Search Console and Bing Webmaster Tools manually; account verification cannot be completed in source code alone.
 
-## Visual Direction
+## Publishing boundaries
 
-The site uses a clean personal-authority visual system: warm paper, black type, restrained red accents, simple cards, and direct QR-led contact.
+English is the live language. The site is structured so reviewed Mandarin pages can later live under `/zh/`; do not publish machine-translated pages without human review. Business Lens Advisory provides commercial, operational, and implementation support, not licensed legal, tax, financial, migration, or investment advice.

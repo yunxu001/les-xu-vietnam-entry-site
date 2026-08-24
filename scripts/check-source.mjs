@@ -4,75 +4,28 @@ import { join } from "node:path";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const requiredFiles = [
-  "src/pages/index.astro",
-  "src/pages/advisory.astro",
-  "src/pages/insights/index.astro",
-  "src/pages/resources/vietnam-entry-decision-gate-checklist.astro",
-  "src/pages/about.astro",
-  "src/pages/contact.astro",
-  "src/data/site.ts",
-  "src/styles/global.css",
-  "public/images/whatsapp-qr.jpg",
-  "public/images/wechat-qr.jpg",
-  "public/images/zalo-qr.jpg",
-  "public/images/post-01-vietnam-not-shortcut-integrated.png",
-  "public/images/post-02-market-access-gate-integrated.png",
-  "public/images/post-12-first-100-days-integrated.png",
-  "src/content/insights/foreigners-start-business-vietnam.md",
-  "src/content/insights/vietnam-company-setup-first-100-days.md",
-  "src/content/insights/vietnam-market-entry-checklist.md",
-  "src/content/insights/vietnam-lease-license-capital-sequence.md",
-  "src/content/insights/china-plus-one-vietnam-sme-guide.md",
-  "src/content/insights/da-nang-vs-ho-chi-minh-business-entry.md",
-  "scripts/generate-content-drafts.mjs"
+  "src/pages/index.astro", "src/pages/services/index.astro", "src/pages/services/[slug].astro",
+  "src/pages/team.astro", "src/pages/watch.astro", "src/pages/brief.astro", "src/pages/relocation.astro",
+  "src/pages/contact.astro", "src/data/site.ts", "src/components/NewsletterForm.astro",
+  "public/_redirects", "public/images/whatsapp-qr.jpg", "public/images/wechat-qr.jpg", "public/images/zalo-qr.jpg",
+  "public/images/ai-training-operating-system-hero.png", "src/content/insights/sleep-economy-business-opportunity.md",
+  "scripts/generate-content-drafts.mjs", "scripts/generate-sitemap.mjs", "scripts/fetch-youtube-feed.mjs"
 ];
-
-const failures = [];
-
-for (const file of requiredFiles) {
-  if (!existsSync(join(root, file))) failures.push(`missing source file: ${file}`);
-}
-
+const failures = requiredFiles.filter((file) => !existsSync(join(root, file))).map((file) => `missing source file: ${file}`);
 const textFiles = [];
-const walk = (dir) => {
-  for (const entry of readdirSync(dir, { withFileTypes: true })) {
-    const fullPath = join(dir, entry.name);
-    if (entry.isDirectory()) walk(fullPath);
-    if (entry.isFile() && /\.(astro|ts|md|mjs|json|css|svg)$/.test(entry.name)) {
-      textFiles.push(fullPath);
-    }
-  }
-};
+const walk = (dir) => readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
+  const fullPath = join(dir, entry.name);
+  if (entry.isDirectory()) walk(fullPath);
+  if (entry.isFile() && /\.(astro|ts|md|mjs|json|css|svg)$/.test(entry.name)) textFiles.push(fullPath);
+});
 walk(join(root, "src"));
 textFiles.push(join(root, "package.json"));
-textFiles.push(join(root, "README.md"));
-
 const combined = textFiles.map((file) => readFileSync(file, "utf8")).join("\n");
-const requiredText = [
-  "Les Xu",
-  "Book a Vietnam Entry Reality Check",
-  "WhatsApp",
-  "WeChat",
-  "Zalo",
-  "Vietnam Entry Decision Gate Checklist",
-  "foreigners-start-business-vietnam",
-  "content:drafts"
-];
-
-for (const text of requiredText) {
+for (const text of ["Business Lens with Les", "Business Lens Advisory", "Jeffrey Zhang", "Join the Business Lens Brief", "WhatsApp", "WeChat", "Zalo", "content:drafts"]) {
   if (!combined.includes(text)) failures.push(`missing source text: ${text}`);
 }
-
 if (combined.includes("Yun Xu")) failures.push("old public name found: Yun Xu");
-if (/linkedin/i.test(combined)) failures.push("LinkedIn reference found");
-if (combined.includes("TBD") || combined.includes("TODO")) {
-  failures.push("placeholder marker found");
-}
-
-if (failures.length > 0) {
-  console.error("Source check failed:");
-  for (const failure of failures) console.error(`- ${failure}`);
-  process.exit(1);
-}
-
+if (/USD\s*\d|test range|founding price/i.test(combined)) failures.push("public pricing found");
+if (combined.includes("TBD") || combined.includes("TODO")) failures.push("placeholder marker found");
+if (failures.length) { console.error(`Source check failed:\n${failures.map((item) => `- ${item}`).join("\n")}`); process.exit(1); }
 console.log("Source check passed.");

@@ -1,0 +1,89 @@
+---
+import { newsletter } from "../data/site";
+
+interface Props {
+  source?: string;
+  compact?: boolean;
+}
+
+const { source = "website", compact = false } = Astro.props;
+const isKitForm = Boolean(newsletter.kitFormAction);
+---
+
+<form
+  class:list={["newsletter-form", { compact }]}
+  name="business-lens-brief"
+  method="post"
+  action={isKitForm ? newsletter.kitFormAction : "/brief"}
+  data-netlify={isKitForm ? undefined : "true"}
+>
+  <input type="hidden" name="form-name" value="business-lens-brief" />
+  <input type="hidden" name="source" value={source} />
+  <input type="hidden" name="utm_source" data-utm="utm_source" />
+  <input type="hidden" name="utm_medium" data-utm="utm_medium" />
+  <input type="hidden" name="utm_campaign" data-utm="utm_campaign" />
+  <label>
+    <span>Email address</span>
+    <input name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
+  </label>
+  <label>
+    <span>Most useful topic</span>
+    <select name="interest">
+      {newsletter.interests.map((interest) => <option value={interest}>{interest}</option>)}
+    </select>
+  </label>
+  <button class="button gold" type="submit">Join the brief</button>
+</form>
+
+<script>
+  const parameters = new URLSearchParams(window.location.search);
+  document.querySelectorAll("[data-utm]").forEach((field) => {
+    if (field instanceof HTMLInputElement) {
+      field.value = parameters.get(field.dataset.utm || "") || "";
+    }
+  });
+</script>
+
+<style>
+  .newsletter-form {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr auto;
+    gap: 10px;
+    align-items: end;
+  }
+
+  label {
+    display: grid;
+    gap: 6px;
+    color: var(--steel);
+    font-size: 0.8rem;
+    font-weight: 800;
+  }
+
+  input,
+  select {
+    width: 100%;
+    min-height: 48px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 10px 12px;
+    background: var(--white);
+    color: var(--ink);
+    font: inherit;
+  }
+
+  .compact {
+    grid-template-columns: 1fr auto;
+  }
+
+  .compact label:nth-of-type(2) {
+    display: none;
+  }
+
+  @media (max-width: 720px) {
+    .newsletter-form,
+    .compact {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

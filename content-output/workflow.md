@@ -1,13 +1,10 @@
-# Automated Content Workflow
+# Business Lens Content Workflow
 
-This workflow keeps publishing human-approved and repeatable.
+1. Choose one real owner question as the weekly anchor.
+2. Publish the reviewed website article as the source of truth.
+3. Run `npm run content:drafts` to prepare website, LinkedIn, X, newsletter, and short-video drafts.
+4. Add first-hand examples, current sources, and the right founder voice.
+5. Approve every post, comment, DM, and Reddit contribution manually.
+6. Record reach, qualified replies, newsletter subscriptions, and enquiries in the monthly report.
 
-1. Publish one source-of-truth insight page.
-2. Run `npm run content:drafts`.
-3. Review `content-output/social-drafts.md`.
-4. Edit for current facts, tone, and platform fit.
-5. Approve manually before posting anywhere.
-6. Track replies, QR adds, consultation requests, and page visits.
-7. Feed the best questions back into the next insight page.
-
-Never automate direct messages, comments, replies, or personal-account posting without human review.
+Automation stops at research, drafting, formatting, tracking links, feed retrieval, and reporting. It does not publish to personal accounts or participate in communities on your behalf.

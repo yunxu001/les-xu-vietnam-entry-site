@@ -1,64 +1,74 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import CtaBand from "../../components/CtaBand.astro";
 import { getCollection, render } from "astro:content";
+import { site } from "../../data/site";
 
 export async function getStaticPaths() {
   const posts = await getCollection("insights");
-  return posts.map((post) => ({
-    params: { slug: post.id.replace(/\.md$/, "") },
-    props: { post }
-  }));
+  return posts.map((post) => ({ params: { slug: post.id.replace(/\.md$/, "") }, props: { post } }));
 }
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const slug = post.id.replace(/\.md$/, "");
+const pageUrl = `${site.url}/insights/${slug}/`;
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.data.title,
+    description: post.data.description,
+    image: new URL(post.data.image, site.url).toString(),
+    author: { "@type": "Person", name: post.data.author },
+    publisher: { "@type": "Organization", name: site.name, url: site.url },
+    datePublished: post.data.publishedAt,
+    dateModified: post.data.updatedAt || post.data.publishedAt,
+    mainEntityOfPage: pageUrl
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+      { "@type": "ListItem", position: 2, name: "Insights", item: `${site.url}/insights/` },
+      { "@type": "ListItem", position: 3, name: post.data.title, item: pageUrl }
+    ]
+  },
+  ...(post.data.videoUrl ? [{ "@context": "https://schema.org", "@type": "VideoObject", name: post.data.title, description: post.data.description, url: post.data.videoUrl, publisher: { "@type": "Organization", name: site.name } }] : [])
+];
 ---
 
-<BaseLayout title={post.data.title} description={post.data.description} image={post.data.image}>
+<BaseLayout title={post.data.title} description={post.data.description} image={post.data.image} schema={schema}>
   <section class="article-hero">
     <div class="container article-hero-grid">
       <div>
-        <p class="eyebrow">{post.data.category}</p>
+        <p class="eyebrow">{post.data.category} / {post.data.pillar}</p>
         <h1>{post.data.title}</h1>
         <p class="lead">{post.data.description}</p>
-        <span>{post.data.readTime}</span>
+        <p class="meta">By {post.data.author} · {post.data.readTime}{post.data.publishedAt && ` · Updated ${post.data.updatedAt || post.data.publishedAt}`}</p>
       </div>
-      <div class="media-frame">
-        <img src={post.data.image} alt={post.data.title} />
-      </div>
+      <div class="media-frame"><img src={post.data.image} alt={post.data.title} /></div>
     </div>
   </section>
 
-  <article class="article-body">
-    <Content />
-  </article>
+  <article class="article-body"><Content /></article>
 
-  <CtaBand />
+  <section class="section tight source-section">
+    <div class="article-body sources">
+      {post.data.videoUrl && <p><strong>Watch:</strong> <a href={post.data.videoUrl} target="_blank" rel="noreferrer">Business Lens video or channel</a></p>}
+      {post.data.sources.length > 0 && <><h2>Sources and further reading</h2><ul>{post.data.sources.map((source) => <li><a href={source.url} target="_blank" rel="noreferrer">{source.name}</a></li>)}</ul></>}
+    </div>
+  </section>
+  <section class="section dark-band"><div class="container cta"><div><p class="eyebrow">The Business Lens Brief</p><h2>Get the next practical note.</h2></div><a class="button gold" href="/brief">Join the brief</a></div></section>
 </BaseLayout>
 
 <style>
-  .article-hero {
-    padding: 96px 0 72px;
-    border-bottom: 1px solid var(--line);
-    background: var(--paper);
-  }
-
-  .article-hero-grid {
-    display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    gap: 48px;
-    align-items: center;
-  }
-
-  .article-hero span {
-    color: var(--red);
-    font-weight: 900;
-  }
-
-  @media (max-width: 860px) {
-    .article-hero-grid {
-      grid-template-columns: 1fr;
-    }
-  }
+  .article-hero { padding: 96px 0 72px; border-bottom: 1px solid var(--line); }
+  .article-hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; }
+  .meta { color: var(--red); font-weight: 800; }
+  .source-section { border-top: 1px solid var(--line); }
+  .sources { padding-top: 0; padding-bottom: 0; }
+  .sources h2 { margin-top: 0; }
+  .cta { display: flex; justify-content: space-between; gap: 24px; align-items: end; }
+  @media (max-width: 860px) { .article-hero-grid { grid-template-columns: 1fr; } .cta { display: grid; align-items: start; } }
 </style>

@@ -1,0 +1,41 @@
+---
+import { services } from "../data/site";
+---
+
+<div class="grid four service-grid">
+  {services.map((service) => (
+    <article class="card service-card">
+      <h3>{service.title}</h3>
+      <p>{service.summary}</p>
+      <a href={`/services/${service.slug}`}>Explore service <span aria-hidden="true">-></span></a>
+    </article>
+  ))}
+</div>
+
+<style>
+  .service-grid {
+    gap: 12px;
+  }
+
+  .service-card {
+    display: grid;
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .service-card p {
+    margin: 0;
+    color: var(--steel);
+    font-size: 0.93rem;
+  }
+
+  .service-card a {
+    color: var(--red);
+    font-size: 0.86rem;
+    font-weight: 900;
+  }
+</style>

@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { founders, site } from "../data/site";
+
+const people = founders.map((founder) => ({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: founder.name,
+  jobTitle: founder.role,
+  worksFor: { "@type": "Organization", name: site.advisoryName },
+  sameAs: founder.linkedin,
+  description: founder.bio
+}));
+---
+
+<BaseLayout title="The Team" description="Meet Les Xu and Jeffrey Zhang, co-founders of Business Lens Advisory." schema={people}>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Business Lens Advisory</p>
+      <h1>Two complementary ways of seeing the business.</h1>
+      <p class="lead">Business Lens Advisory is a provisional working name for the consulting practice co-founded by Les Xu and Jeffrey Zhang. We work remotely with SME owners; in-person work is by arrangement.</p>
+    </div>
+  </section>
+  <section class="section tight">
+    <div class="container grid two">
+      {founders.map((founder) => (
+        <article class="card founder-card">
+          <p class="eyebrow">Co-founder</p>
+          <h2>{founder.name}</h2>
+          <p class="role">{founder.role}</p>
+          <p>{founder.bio}</p>
+          <ul>{founder.expertise.map((item) => <li>{item}</li>)}</ul>
+          <a href={founder.linkedin} target="_blank" rel="noreferrer">View LinkedIn profile -></a>
+        </article>
+      ))}
+    </div>
+  </section>
+  <section class="section">
+    <div class="container card joint">
+      <h2>What we do together</h2>
+      <p>We combine commercial judgement, people systems, practical AI, and cross-border operating perspective for owners building something that has to work in the real world.</p>
+      <a class="button gold" href="/contact">Talk through the opportunity</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .founder-card { display: grid; gap: 14px; }
+  .founder-card p, .founder-card ul { margin: 0; color: var(--steel); }
+  .founder-card ul { padding-left: 20px; }
+  .founder-card a { color: var(--red); font-weight: 900; }
+  .role { font-weight: 800; }
+  .joint { display: grid; gap: 14px; max-width: 760px; }
+  .joint p { margin: 0; color: var(--steel); }
+</style>

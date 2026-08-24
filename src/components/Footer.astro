@@ -1,17 +1,22 @@
 ---
-import { site } from "../data/site";
+import { site, socialLinks } from "../data/site";
 ---
 
 <footer class="site-footer">
   <div>
     <strong>{site.name}</strong>
-    <p>{site.description}</p>
+    <p>{site.shortTagline}</p>
   </div>
   <div class="footer-links">
-    <a href="/advisory">Advisory</a>
+    <a href="/services">Services</a>
+    <a href="/watch">Watch</a>
+    <a href="/brief">Brief</a>
     <a href="/insights">Insights</a>
-    <a href="/about">About</a>
+    <a href="/team">Team</a>
     <a href="/contact">Contact</a>
+  </div>
+  <div class="footer-links social-links">
+    {socialLinks.map((link) => <a href={link.url} target="_blank" rel="noreferrer">{link.name}</a>)}
   </div>
 </footer>
 
@@ -37,6 +42,11 @@ import { site } from "../data/site";
     gap: 14px;
     color: var(--steel);
     font-weight: 800;
+  }
+
+  .social-links {
+    grid-column: 1 / -1;
+    font-size: 0.85rem;
   }
 
   a:hover {

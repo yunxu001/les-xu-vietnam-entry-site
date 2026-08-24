@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/astro-command.mjs dev",
+    "prebuild": "node scripts/generate-sitemap.mjs",
     "build": "node scripts/astro-command.mjs build",
     "preview": "node scripts/astro-command.mjs preview",
     "content:drafts": "node scripts/generate-content-drafts.mjs",
+    "content:youtube": "node scripts/fetch-youtube-feed.mjs",
+    "indexnow:submit": "node scripts/submit-indexnow.mjs",
     "check:source": "node scripts/check-source.mjs",
     "check:site": "node scripts/check-site.mjs"
   },
