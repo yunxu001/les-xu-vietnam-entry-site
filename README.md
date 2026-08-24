@@ -15,6 +15,10 @@ npm run content:youtube
 
 `npm run build` generates the sitemap before Astro builds the site. `npm run content:drafts` turns the published insight library into review-ready website, LinkedIn, X, newsletter, and short-video drafts. It never publishes content, sends DMs, or participates in communities automatically.
 
+## Video library
+
+`/watch` lists the YouTube channel automatically. A GitHub workflow checks the public YouTube feed every six hours, commits a changed video library, and Netlify publishes that update. The front-page featured video is intentionally separate and stays manually selected in `src/data/site.ts`.
+
 ## Newsletter and analytics setup
 
 Set `PUBLIC_KIT_FORM_ACTION` to the Kit form action after creating a Business Lens Brief form with double opt-in and interest tags. Until then, the embedded form is captured by Netlify Forms.
