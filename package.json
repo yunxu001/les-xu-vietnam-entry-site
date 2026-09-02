@@ -12,11 +12,14 @@
     "content:youtube": "node scripts/fetch-youtube-feed.mjs",
     "indexnow:submit": "node scripts/submit-indexnow.mjs",
     "check:source": "node scripts/check-source.mjs",
-    "check:site": "node scripts/check-site.mjs"
+    "check:site": "node scripts/check-site.mjs",
+    "check:security": "node scripts/check-security.mjs"
   },
   "dependencies": {
-    "astro": "^5.12.0",
+    "astro": "7.2.10",
     "typescript": "^5.8.3"
   },
-  "devDependencies": {}
+  "overrides": {
+    "svgo": "4.1.0"
+  }
 }

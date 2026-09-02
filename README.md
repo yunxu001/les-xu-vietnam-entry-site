@@ -11,6 +11,7 @@ npm run check:source
 npm run check:site
 npm run content:drafts
 npm run content:youtube
+npm run check:security
 ```
 
 `npm run build` generates the sitemap before Astro builds the site. `npm run content:drafts` turns the published insight library into review-ready website, LinkedIn, X, newsletter, and short-video drafts. It never publishes content, sends DMs, or participates in communities automatically.
@@ -34,3 +35,9 @@ The public IndexNow verification file is in `public/`. Add the site to Google Se
 ## Publishing boundaries
 
 English is the live language. The site is structured so reviewed Mandarin pages can later live under `/zh/`; do not publish machine-translated pages without human review. Business Lens Advisory provides commercial, operational, and implementation support, not licensed legal, tax, financial, migration, or investment advice.
+
+## Security
+
+Never commit `.env` files, credentials, private keys, customer enquiries, subscriber exports, or unpublished source material. Use `.env.example` for the safe public-variable template, and store deployment values in Netlify or GitHub Actions settings. `npm run check:security` scans tracked files for sensitive-looking paths and common credential patterns; `npm audit --audit-level=high` checks the dependency tree. See [SECURITY.md](SECURITY.md) for the reporting and rotation procedure.
+
+The repository also runs the secret scan and dependency audit in GitHub Actions. Run `npm run check:security` locally before pushing. GitHub repository administrators should enable secret scanning and push protection in the repository security settings.

@@ -4,4 +4,23 @@ dist/
 .netlify/
 .env
 .env.*
+!.env.example
 npm-debug.log*
+
+# Local secrets and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+credentials.json
+service-account*.json
+secrets/
+.secrets/
+
+# Local tooling and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

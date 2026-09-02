@@ -6,7 +6,10 @@ import { join } from "node:path";
 const root = fileURLToPath(new URL("..", import.meta.url));
 const command = process.argv[2] || "build";
 const args = process.argv.slice(3);
-const astroBin = join(root, "node_modules", "astro", "astro.js");
+const astroBin = [
+  join(root, "node_modules", "astro", "bin", "astro.mjs"),
+  join(root, "node_modules", "astro", "astro.js")
+].find(existsSync);
 
 if (!existsSync(astroBin)) {
   console.error("Astro is not installed. Run npm install first.");
