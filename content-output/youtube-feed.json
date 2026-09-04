@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-03T21:02:49.175Z",
+  "fetchedAt": "2026-09-04T11:23:08.240Z",
   "entries": [
+    {
+      "id": "7rNXxUIKyeg",
+      "title": "Can a Melbourne Bakery Still Make Money in 2026?",
+      "url": "https://www.youtube.com/watch?v=7rNXxUIKyeg",
+      "thumbnail": "https://i4.ytimg.com/vi/7rNXxUIKyeg/hqdefault.jpg",
+      "publishedAt": "2026-09-04T02:16:39+00:00",
+      "updatedAt": "2026-09-04T02:19:12+00:00"
+    },
     {
       "id": "U6mBtklMwig",
       "title": "Andrew Ng on AI: Building Is Cheaper, Judgement Still Wins",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i3.ytimg.com/vi/viTsNSDxpOs/hqdefault.jpg",
       "publishedAt": "2026-08-24T07:48:35+00:00",
       "updatedAt": "2026-09-02T21:24:18+00:00"
-    },
-    {
-      "id": "_o9g34r6_6Y",
-      "title": "Is the Sleep Economy a Real Business Opportunity?",
-      "url": "https://www.youtube.com/shorts/_o9g34r6_6Y",
-      "thumbnail": "https://i4.ytimg.com/vi/_o9g34r6_6Y/hqdefault.jpg",
-      "publishedAt": "2026-08-22T06:12:39+00:00",
-      "updatedAt": "2026-08-26T11:18:51+00:00"
     }
   ]
 }
