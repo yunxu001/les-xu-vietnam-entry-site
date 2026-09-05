@@ -1,7 +1,23 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-04T20:45:31.062Z",
+  "fetchedAt": "2026-09-05T10:35:38.901Z",
   "entries": [
+    {
+      "id": "dh1AOKsPuFs",
+      "title": "Vietnam’s Hidden Wealth: Is It Really a Landlord Economy?",
+      "url": "https://www.youtube.com/watch?v=dh1AOKsPuFs",
+      "thumbnail": "https://i1.ytimg.com/vi/dh1AOKsPuFs/hqdefault.jpg",
+      "publishedAt": "2026-09-05T04:25:47+00:00",
+      "updatedAt": "2026-09-05T04:32:56+00:00"
+    },
+    {
+      "id": "jUobhFskBfQ",
+      "title": "The AI Boom Is Really an Electricity Business",
+      "url": "https://www.youtube.com/watch?v=jUobhFskBfQ",
+      "thumbnail": "https://i3.ytimg.com/vi/jUobhFskBfQ/hqdefault.jpg",
+      "publishedAt": "2026-09-05T03:47:53+00:00",
+      "updatedAt": "2026-09-05T04:04:08+00:00"
+    },
     {
       "id": "7rNXxUIKyeg",
       "title": "Can a Melbourne Bakery Still Make Money in 2026?",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i2.ytimg.com/vi/i8Hx05kcXHA/hqdefault.jpg",
       "publishedAt": "2026-08-26T00:00:10+00:00",
       "updatedAt": "2026-09-01T16:11:48+00:00"
-    },
-    {
-      "id": "D3z6A4t7Wjs",
-      "title": "The Business of Attention: How Newsletters Make Money #businessmodel #entrepreneurship",
-      "url": "https://www.youtube.com/shorts/D3z6A4t7Wjs",
-      "thumbnail": "https://i1.ytimg.com/vi/D3z6A4t7Wjs/hqdefault.jpg",
-      "publishedAt": "2026-08-25T08:12:29+00:00",
-      "updatedAt": "2026-08-25T08:31:23+00:00"
-    },
-    {
-      "id": "viTsNSDxpOs",
-      "title": "The Real Business Behind Pickleball Recycling",
-      "url": "https://www.youtube.com/shorts/viTsNSDxpOs",
-      "thumbnail": "https://i3.ytimg.com/vi/viTsNSDxpOs/hqdefault.jpg",
-      "publishedAt": "2026-08-24T07:48:35+00:00",
-      "updatedAt": "2026-09-02T21:24:18+00:00"
     }
   ]
 }
