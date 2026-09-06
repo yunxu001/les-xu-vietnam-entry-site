@@ -1,7 +1,23 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-05T20:20:47.501Z",
+  "fetchedAt": "2026-09-06T04:38:55.137Z",
   "entries": [
+    {
+      "id": "4X6dPSb2Gb8",
+      "title": "Vietnam’s Industrial-Park Boom: Who Captures the Value?",
+      "url": "https://www.youtube.com/watch?v=4X6dPSb2Gb8",
+      "thumbnail": "https://i1.ytimg.com/vi/4X6dPSb2Gb8/hqdefault.jpg",
+      "publishedAt": "2026-09-06T04:28:56+00:00",
+      "updatedAt": "2026-09-06T04:35:52+00:00"
+    },
+    {
+      "id": "aFNG-u2BDWE",
+      "title": "Can Vietnam Move Up the Semiconductor Value Chain?",
+      "url": "https://www.youtube.com/watch?v=aFNG-u2BDWE",
+      "thumbnail": "https://i2.ytimg.com/vi/aFNG-u2BDWE/hqdefault.jpg",
+      "publishedAt": "2026-09-06T04:19:07+00:00",
+      "updatedAt": "2026-09-06T04:28:50+00:00"
+    },
     {
       "id": "dh1AOKsPuFs",
       "title": "Vietnam’s Hidden Wealth: Is It Really a Landlord Economy?",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i4.ytimg.com/vi/gi7sMEgBCHc/hqdefault.jpg",
       "publishedAt": "2026-08-27T09:31:22+00:00",
       "updatedAt": "2026-08-27T11:19:08+00:00"
-    },
-    {
-      "id": "I3vz86kFlRY",
-      "title": "The Real Cost of Opening a Bakery in Melbourne",
-      "url": "https://www.youtube.com/shorts/I3vz86kFlRY",
-      "thumbnail": "https://i2.ytimg.com/vi/I3vz86kFlRY/hqdefault.jpg",
-      "publishedAt": "2026-08-26T04:09:36+00:00",
-      "updatedAt": "2026-08-26T16:33:26+00:00"
-    },
-    {
-      "id": "i8Hx05kcXHA",
-      "title": "The Business of Connection: Inside the Loneliness Economy",
-      "url": "https://www.youtube.com/shorts/i8Hx05kcXHA",
-      "thumbnail": "https://i2.ytimg.com/vi/i8Hx05kcXHA/hqdefault.jpg",
-      "publishedAt": "2026-08-26T00:00:10+00:00",
-      "updatedAt": "2026-09-01T16:11:48+00:00"
     }
   ]
 }
