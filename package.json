@@ -16,7 +16,7 @@
     "check:security": "node scripts/check-security.mjs"
   },
   "dependencies": {
-    "astro": "7.2.10",
+    "astro": "7.3.1",
     "typescript": "^5.8.3"
   },
   "overrides": {
