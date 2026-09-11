@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-10T20:52:24.222Z",
+  "fetchedAt": "2026-09-11T11:21:07.529Z",
   "entries": [
+    {
+      "id": "Y_Xj2sBhCIY",
+      "title": "The $1 Million Customer Problem: Why Big Revenue Can Hide Bad Economics",
+      "url": "https://www.youtube.com/watch?v=Y_Xj2sBhCIY",
+      "thumbnail": "https://i2.ytimg.com/vi/Y_Xj2sBhCIY/hqdefault.jpg",
+      "publishedAt": "2026-09-11T08:43:42+00:00",
+      "updatedAt": "2026-09-11T08:50:46+00:00"
+    },
     {
       "id": "JXSrPSF45w8",
       "title": "The AI Productivity Mirage: Your Team May Be Working Faster—but Your Business Is Not Growing",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i3.ytimg.com/vi/jUobhFskBfQ/hqdefault.jpg",
       "publishedAt": "2026-09-05T03:47:53+00:00",
       "updatedAt": "2026-09-05T04:04:08+00:00"
-    },
-    {
-      "id": "7rNXxUIKyeg",
-      "title": "Can a Melbourne Bakery Still Make Money in 2026?",
-      "url": "https://www.youtube.com/watch?v=7rNXxUIKyeg",
-      "thumbnail": "https://i4.ytimg.com/vi/7rNXxUIKyeg/hqdefault.jpg",
-      "publishedAt": "2026-09-04T02:16:39+00:00",
-      "updatedAt": "2026-09-04T02:19:12+00:00"
     }
   ]
 }
