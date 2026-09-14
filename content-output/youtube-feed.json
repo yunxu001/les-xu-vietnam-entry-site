@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-13T20:50:20.446Z",
+  "fetchedAt": "2026-09-14T12:46:50.194Z",
   "entries": [
+    {
+      "id": "s1AzKlNfZWI",
+      "title": "A $1 Million Customer. Only $20,000 Left",
+      "url": "https://www.youtube.com/shorts/s1AzKlNfZWI",
+      "thumbnail": "https://i4.ytimg.com/vi/s1AzKlNfZWI/hqdefault.jpg",
+      "publishedAt": "2026-09-14T11:38:49+00:00",
+      "updatedAt": "2026-09-14T11:39:14+00:00"
+    },
     {
       "id": "Y_Xj2sBhCIY",
       "title": "The $1 Million Customer Problem: Why Big Revenue Can Hide Bad Economics",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i1.ytimg.com/vi/dh1AOKsPuFs/hqdefault.jpg",
       "publishedAt": "2026-09-05T04:25:47+00:00",
       "updatedAt": "2026-09-05T04:32:56+00:00"
-    },
-    {
-      "id": "jUobhFskBfQ",
-      "title": "The AI Boom Is Really an Electricity Business",
-      "url": "https://www.youtube.com/watch?v=jUobhFskBfQ",
-      "thumbnail": "https://i3.ytimg.com/vi/jUobhFskBfQ/hqdefault.jpg",
-      "publishedAt": "2026-09-05T03:47:53+00:00",
-      "updatedAt": "2026-09-05T04:04:08+00:00"
     }
   ]
 }
