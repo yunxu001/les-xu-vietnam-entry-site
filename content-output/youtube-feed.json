@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-18T20:54:29.638Z",
+  "fetchedAt": "2026-09-19T10:58:52.615Z",
   "entries": [
+    {
+      "id": "4Q5bI6o7nqU",
+      "title": "AI Made 50 Videos. Where Are the Customers?",
+      "url": "https://www.youtube.com/shorts/4Q5bI6o7nqU",
+      "thumbnail": "https://i1.ytimg.com/vi/4Q5bI6o7nqU/hqdefault.jpg",
+      "publishedAt": "2026-09-19T05:28:42+00:00",
+      "updatedAt": "2026-09-19T09:33:54+00:00"
+    },
     {
       "id": "YdQ-ZaGgtl0",
       "title": "Who Pays to Collect a Worn-Out Pickleball?",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i2.ytimg.com/vi/mvxxw2VvMBk/hqdefault.jpg",
       "publishedAt": "2026-09-06T07:53:42+00:00",
       "updatedAt": "2026-09-06T07:53:47+00:00"
-    },
-    {
-      "id": "4X6dPSb2Gb8",
-      "title": "Vietnam’s Industrial-Park Boom: Who Captures the Value?",
-      "url": "https://www.youtube.com/watch?v=4X6dPSb2Gb8",
-      "thumbnail": "https://i1.ytimg.com/vi/4X6dPSb2Gb8/hqdefault.jpg",
-      "publishedAt": "2026-09-06T04:28:56+00:00",
-      "updatedAt": "2026-09-06T04:35:52+00:00"
     }
   ]
 }
