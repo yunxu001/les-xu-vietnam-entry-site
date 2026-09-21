@@ -1,14 +1,22 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-20T20:48:59.373Z",
+  "fetchedAt": "2026-09-21T12:48:10.159Z",
   "entries": [
+    {
+      "id": "iL-MXA2B7m0",
+      "title": "A $5 Subscription Can Lose Money`",
+      "url": "https://www.youtube.com/shorts/iL-MXA2B7m0",
+      "thumbnail": "https://i2.ytimg.com/vi/iL-MXA2B7m0/hqdefault.jpg",
+      "publishedAt": "2026-09-21T01:14:43+00:00",
+      "updatedAt": "2026-09-21T03:50:25+00:00"
+    },
     {
       "id": "4Q5bI6o7nqU",
       "title": "AI Made 50 Videos. Where Are the Customers?",
       "url": "https://www.youtube.com/shorts/4Q5bI6o7nqU",
       "thumbnail": "https://i1.ytimg.com/vi/4Q5bI6o7nqU/hqdefault.jpg",
       "publishedAt": "2026-09-19T05:28:42+00:00",
-      "updatedAt": "2026-09-20T12:07:21+00:00"
+      "updatedAt": "2026-09-21T01:28:29+00:00"
     },
     {
       "id": "YdQ-ZaGgtl0",
@@ -32,7 +40,7 @@
       "url": "https://www.youtube.com/shorts/s1AzKlNfZWI",
       "thumbnail": "https://i4.ytimg.com/vi/s1AzKlNfZWI/hqdefault.jpg",
       "publishedAt": "2026-09-14T11:38:49+00:00",
-      "updatedAt": "2026-09-14T20:32:19+00:00"
+      "updatedAt": "2026-09-21T09:06:58+00:00"
     },
     {
       "id": "Y_Xj2sBhCIY",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i4.ytimg.com/vi/Kn7ZS3pR69s/hqdefault.jpg",
       "publishedAt": "2026-09-06T08:09:15+00:00",
       "updatedAt": "2026-09-06T08:13:21+00:00"
-    },
-    {
-      "id": "mvxxw2VvMBk",
-      "title": "Vietnam Wants an AI Economy. Who Captures the Value?",
-      "url": "https://www.youtube.com/watch?v=mvxxw2VvMBk",
-      "thumbnail": "https://i2.ytimg.com/vi/mvxxw2VvMBk/hqdefault.jpg",
-      "publishedAt": "2026-09-06T07:53:42+00:00",
-      "updatedAt": "2026-09-06T07:53:47+00:00"
     }
   ]
 }
