@@ -1,14 +1,22 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-23T11:36:49.353Z",
+  "fetchedAt": "2026-09-23T16:58:08.304Z",
   "entries": [
+    {
+      "id": "oIbHtWBx2qk",
+      "title": "One Email. A $500 Sale.",
+      "url": "https://www.youtube.com/shorts/oIbHtWBx2qk",
+      "thumbnail": "https://i4.ytimg.com/vi/oIbHtWBx2qk/hqdefault.jpg",
+      "publishedAt": "2026-09-23T11:40:48+00:00",
+      "updatedAt": "2026-09-23T12:48:54+00:00"
+    },
     {
       "id": "paly0Ewa_qQ",
       "title": "A $1,000 Sale Can Create a $700 Cash Gap",
       "url": "https://www.youtube.com/shorts/paly0Ewa_qQ",
       "thumbnail": "https://i1.ytimg.com/vi/paly0Ewa_qQ/hqdefault.jpg",
       "publishedAt": "2026-09-22T06:27:02+00:00",
-      "updatedAt": "2026-09-23T09:49:32+00:00"
+      "updatedAt": "2026-09-23T11:40:41+00:00"
     },
     {
       "id": "iL-MXA2B7m0",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i1.ytimg.com/vi/lbx6LLdBhBs/hqdefault.jpg",
       "publishedAt": "2026-09-07T14:55:55+00:00",
       "updatedAt": "2026-09-07T15:10:51+00:00"
-    },
-    {
-      "id": "3dPSTGXXHcA",
-      "title": "Can a QR Code Turn a Street Vendor into a Bank? | Vietnam's QR Economy",
-      "url": "https://www.youtube.com/watch?v=3dPSTGXXHcA",
-      "thumbnail": "https://i4.ytimg.com/vi/3dPSTGXXHcA/hqdefault.jpg",
-      "publishedAt": "2026-09-07T14:51:56+00:00",
-      "updatedAt": "2026-09-07T15:01:46+00:00"
     }
   ]
 }
