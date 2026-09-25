@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-24T21:30:57.227Z",
+  "fetchedAt": "2026-09-25T11:50:37.336Z",
   "entries": [
+    {
+      "id": "UqEV0-e3nnY",
+      "title": "The Cheapest Quote Can Cost More",
+      "url": "https://www.youtube.com/shorts/UqEV0-e3nnY",
+      "thumbnail": "https://i2.ytimg.com/vi/UqEV0-e3nnY/hqdefault.jpg",
+      "publishedAt": "2026-09-25T11:28:25+00:00",
+      "updatedAt": "2026-09-25T11:30:45+00:00"
+    },
     {
       "id": "_QiOKgSSecU",
       "title": "Did AI Save Time—or Move the Work?",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i2.ytimg.com/vi/isUOBwYizOk/hqdefault.jpg",
       "publishedAt": "2026-09-08T14:50:31+00:00",
       "updatedAt": "2026-09-08T14:57:32+00:00"
-    },
-    {
-      "id": "UCfCmTqL0TY",
-      "title": "Who Really Makes Money from Vietnam’s E-commerce Boom?",
-      "url": "https://www.youtube.com/watch?v=UCfCmTqL0TY",
-      "thumbnail": "https://i2.ytimg.com/vi/UCfCmTqL0TY/hqdefault.jpg",
-      "publishedAt": "2026-09-07T15:01:14+00:00",
-      "updatedAt": "2026-09-07T15:13:54+00:00"
     }
   ]
 }
