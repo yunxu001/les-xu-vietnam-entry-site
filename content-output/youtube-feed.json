@@ -1,7 +1,23 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-26T21:10:32.777Z",
+  "fetchedAt": "2026-09-27T12:02:12.370Z",
   "entries": [
+    {
+      "id": "qt7HsWkvh64",
+      "title": "Meta's New VR Glasses Weigh 100g—But What About the Puck?",
+      "url": "https://www.youtube.com/shorts/qt7HsWkvh64",
+      "thumbnail": "https://i2.ytimg.com/vi/qt7HsWkvh64/hqdefault.jpg",
+      "publishedAt": "2026-09-27T10:47:55+00:00",
+      "updatedAt": "2026-09-27T10:49:23+00:00"
+    },
+    {
+      "id": "jGkinOB65Qg",
+      "title": "A $20 Sale Can Cost $200 to Win",
+      "url": "https://www.youtube.com/shorts/jGkinOB65Qg",
+      "thumbnail": "https://i3.ytimg.com/vi/jGkinOB65Qg/hqdefault.jpg",
+      "publishedAt": "2026-09-27T02:58:06+00:00",
+      "updatedAt": "2026-09-27T07:09:12+00:00"
+    },
     {
       "id": "UqEV0-e3nnY",
       "title": "The Cheapest Quote Can Cost More",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i1.ytimg.com/vi/tSM4zcbxFWo/hqdefault.jpg",
       "publishedAt": "2026-09-08T15:04:08+00:00",
       "updatedAt": "2026-09-08T15:44:40+00:00"
-    },
-    {
-      "id": "31f9nkj0pQ4",
-      "title": "Can Chinese AI and Consumer Brands Win Overseas? The Real Battle Starts After the Sale",
-      "url": "https://www.youtube.com/watch?v=31f9nkj0pQ4",
-      "thumbnail": "https://i4.ytimg.com/vi/31f9nkj0pQ4/hqdefault.jpg",
-      "publishedAt": "2026-09-08T14:55:07+00:00",
-      "updatedAt": "2026-09-08T17:03:47+00:00"
-    },
-    {
-      "id": "isUOBwYizOk",
-      "title": "The AI Adoption Trap: Why Small Businesses Buy AI Before Redesigning the Work",
-      "url": "https://www.youtube.com/watch?v=isUOBwYizOk",
-      "thumbnail": "https://i2.ytimg.com/vi/isUOBwYizOk/hqdefault.jpg",
-      "publishedAt": "2026-09-08T14:50:31+00:00",
-      "updatedAt": "2026-09-08T14:57:32+00:00"
     }
   ]
 }
