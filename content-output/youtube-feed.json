@@ -1,14 +1,22 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-27T21:20:40.569Z",
+  "fetchedAt": "2026-09-28T13:54:34.691Z",
   "entries": [
+    {
+      "id": "Ho-iP7kHMLc",
+      "title": "Meta's $1,300 VR Glasses: What Do You Actually Get?",
+      "url": "https://www.youtube.com/watch?v=Ho-iP7kHMLc",
+      "thumbnail": "https://i1.ytimg.com/vi/Ho-iP7kHMLc/hqdefault.jpg",
+      "publishedAt": "2026-09-27T23:09:30+00:00",
+      "updatedAt": "2026-09-27T23:09:30+00:00"
+    },
     {
       "id": "qt7HsWkvh64",
       "title": "Meta's New VR Glasses Weigh 100g—But What About the Puck?",
       "url": "https://www.youtube.com/shorts/qt7HsWkvh64",
       "thumbnail": "https://i2.ytimg.com/vi/qt7HsWkvh64/hqdefault.jpg",
       "publishedAt": "2026-09-27T10:47:55+00:00",
-      "updatedAt": "2026-09-27T10:49:23+00:00"
+      "updatedAt": "2026-09-28T04:50:24+00:00"
     },
     {
       "id": "jGkinOB65Qg",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i4.ytimg.com/vi/KG5WE1-orq4/hqdefault.jpg",
       "publishedAt": "2026-09-10T15:08:33+00:00",
       "updatedAt": "2026-09-12T08:19:40+00:00"
-    },
-    {
-      "id": "tSM4zcbxFWo",
-      "title": "Retiring in Southeast Asia: The Lifestyle Budget Is Not the Real Risk",
-      "url": "https://www.youtube.com/watch?v=tSM4zcbxFWo",
-      "thumbnail": "https://i1.ytimg.com/vi/tSM4zcbxFWo/hqdefault.jpg",
-      "publishedAt": "2026-09-08T15:04:08+00:00",
-      "updatedAt": "2026-09-08T15:44:40+00:00"
     }
   ]
 }
