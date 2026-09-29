@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-28T23:16:30.233Z",
+  "fetchedAt": "2026-09-29T12:52:40.240Z",
   "entries": [
+    {
+      "id": "b9yARdGGHDY",
+      "title": "BL11 ready for review v1",
+      "url": "https://www.youtube.com/shorts/b9yARdGGHDY",
+      "thumbnail": "https://i3.ytimg.com/vi/b9yARdGGHDY/hqdefault.jpg",
+      "publishedAt": "2026-09-29T01:30:07+00:00",
+      "updatedAt": "2026-09-29T01:40:12+00:00"
+    },
     {
       "id": "Ho-iP7kHMLc",
       "title": "Meta's $1,300 VR Glasses: What Do You Actually Get?",
@@ -56,7 +64,7 @@
       "url": "https://www.youtube.com/shorts/paly0Ewa_qQ",
       "thumbnail": "https://i1.ytimg.com/vi/paly0Ewa_qQ/hqdefault.jpg",
       "publishedAt": "2026-09-22T06:27:02+00:00",
-      "updatedAt": "2026-09-28T22:42:54+00:00"
+      "updatedAt": "2026-09-29T01:13:16+00:00"
     },
     {
       "id": "iL-MXA2B7m0",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i3.ytimg.com/vi/JXSrPSF45w8/hqdefault.jpg",
       "publishedAt": "2026-09-10T15:31:16+00:00",
       "updatedAt": "2026-09-10T15:31:16+00:00"
-    },
-    {
-      "id": "KG5WE1-orq4",
-      "title": "Southeast Asia Is Not One Market: The Expansion Mistake",
-      "url": "https://www.youtube.com/watch?v=KG5WE1-orq4",
-      "thumbnail": "https://i4.ytimg.com/vi/KG5WE1-orq4/hqdefault.jpg",
-      "publishedAt": "2026-09-10T15:08:33+00:00",
-      "updatedAt": "2026-09-12T08:19:40+00:00"
     }
   ]
 }
