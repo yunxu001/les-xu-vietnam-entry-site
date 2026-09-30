@@ -1,14 +1,30 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-29T22:14:59.367Z",
+  "fetchedAt": "2026-09-30T12:34:24.904Z",
   "entries": [
     {
+      "id": "pvXd_TRoIRw",
+      "title": "AI’s $820 Billion Buildout: Who Pays—and What Pays It Back?",
+      "url": "https://www.youtube.com/watch?v=pvXd_TRoIRw",
+      "thumbnail": "https://i1.ytimg.com/vi/pvXd_TRoIRw/hqdefault.jpg",
+      "publishedAt": "2026-09-30T11:49:11+00:00",
+      "updatedAt": "2026-09-30T11:49:11+00:00"
+    },
+    {
+      "id": "TQjg0K__kB0",
+      "title": "How Ryanair Made €4.99bn from Extras",
+      "url": "https://www.youtube.com/shorts/TQjg0K__kB0",
+      "thumbnail": "https://i1.ytimg.com/vi/TQjg0K__kB0/hqdefault.jpg",
+      "publishedAt": "2026-09-30T01:57:06+00:00",
+      "updatedAt": "2026-09-30T03:27:40+00:00"
+    },
+    {
       "id": "b9yARdGGHDY",
-      "title": "BL11 ready for review v1",
+      "title": "How a $1,000 Job Can Become $44 an Hour",
       "url": "https://www.youtube.com/shorts/b9yARdGGHDY",
       "thumbnail": "https://i3.ytimg.com/vi/b9yARdGGHDY/hqdefault.jpg",
       "publishedAt": "2026-09-29T01:30:07+00:00",
-      "updatedAt": "2026-09-29T01:40:12+00:00"
+      "updatedAt": "2026-09-30T01:51:17+00:00"
     },
     {
       "id": "Ho-iP7kHMLc",
@@ -88,7 +104,7 @@
       "url": "https://www.youtube.com/shorts/YdQ-ZaGgtl0",
       "thumbnail": "https://i2.ytimg.com/vi/YdQ-ZaGgtl0/hqdefault.jpg",
       "publishedAt": "2026-09-17T22:55:28+00:00",
-      "updatedAt": "2026-09-29T22:13:32+00:00"
+      "updatedAt": "2026-09-30T00:22:43+00:00"
     },
     {
       "id": "CJ5bQNb2Pss",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i4.ytimg.com/vi/s1AzKlNfZWI/hqdefault.jpg",
       "publishedAt": "2026-09-14T11:38:49+00:00",
       "updatedAt": "2026-09-21T09:06:58+00:00"
-    },
-    {
-      "id": "Y_Xj2sBhCIY",
-      "title": "The $1 Million Customer Problem: Why Big Revenue Can Hide Bad Economics",
-      "url": "https://www.youtube.com/watch?v=Y_Xj2sBhCIY",
-      "thumbnail": "https://i2.ytimg.com/vi/Y_Xj2sBhCIY/hqdefault.jpg",
-      "publishedAt": "2026-09-11T08:43:42+00:00",
-      "updatedAt": "2026-09-11T08:50:46+00:00"
-    },
-    {
-      "id": "JXSrPSF45w8",
-      "title": "The AI Productivity Mirage: Your Team May Be Working Faster—but Your Business Is Not Growing",
-      "url": "https://www.youtube.com/watch?v=JXSrPSF45w8",
-      "thumbnail": "https://i3.ytimg.com/vi/JXSrPSF45w8/hqdefault.jpg",
-      "publishedAt": "2026-09-10T15:31:16+00:00",
-      "updatedAt": "2026-09-10T15:31:16+00:00"
     }
   ]
 }
