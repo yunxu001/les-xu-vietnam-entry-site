@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-09-30T22:16:09.142Z",
+  "fetchedAt": "2026-10-01T13:14:26.299Z",
   "entries": [
+    {
+      "id": "1tUcmCTrhuY",
+      "title": "How Costco's $5.9B Membership Engine Works",
+      "url": "https://www.youtube.com/shorts/1tUcmCTrhuY",
+      "thumbnail": "https://i2.ytimg.com/vi/1tUcmCTrhuY/hqdefault.jpg",
+      "publishedAt": "2026-10-01T04:50:59+00:00",
+      "updatedAt": "2026-10-01T04:51:03+00:00"
+    },
     {
       "id": "pvXd_TRoIRw",
       "title": "AI’s $820 Billion Buildout: Who Pays—and What Pays It Back?",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i4.ytimg.com/vi/CJ5bQNb2Pss/hqdefault.jpg",
       "publishedAt": "2026-09-16T05:07:01+00:00",
       "updatedAt": "2026-09-16T10:41:34+00:00"
-    },
-    {
-      "id": "s1AzKlNfZWI",
-      "title": "A $1 Million Customer. Only $20,000 Left",
-      "url": "https://www.youtube.com/shorts/s1AzKlNfZWI",
-      "thumbnail": "https://i4.ytimg.com/vi/s1AzKlNfZWI/hqdefault.jpg",
-      "publishedAt": "2026-09-14T11:38:49+00:00",
-      "updatedAt": "2026-09-21T09:06:58+00:00"
     }
   ]
 }
