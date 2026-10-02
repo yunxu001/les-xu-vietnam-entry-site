@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-01T22:41:15.838Z",
+  "fetchedAt": "2026-10-02T12:34:45.098Z",
   "entries": [
+    {
+      "id": "dvd80UVaq78",
+      "title": "How IKEA Turned Flat-Packs Into a Business Advantage",
+      "url": "https://www.youtube.com/shorts/dvd80UVaq78",
+      "thumbnail": "https://i1.ytimg.com/vi/dvd80UVaq78/hqdefault.jpg",
+      "publishedAt": "2026-10-02T05:39:30+00:00",
+      "updatedAt": "2026-10-02T05:39:35+00:00"
+    },
     {
       "id": "1tUcmCTrhuY",
       "title": "How Costco's $5.9B Membership Engine Works",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i2.ytimg.com/vi/YdQ-ZaGgtl0/hqdefault.jpg",
       "publishedAt": "2026-09-17T22:55:28+00:00",
       "updatedAt": "2026-09-30T00:22:43+00:00"
-    },
-    {
-      "id": "CJ5bQNb2Pss",
-      "title": "A 10% Discount Can Cut Gross Profit in Half**",
-      "url": "https://www.youtube.com/shorts/CJ5bQNb2Pss",
-      "thumbnail": "https://i4.ytimg.com/vi/CJ5bQNb2Pss/hqdefault.jpg",
-      "publishedAt": "2026-09-16T05:07:01+00:00",
-      "updatedAt": "2026-09-16T10:41:34+00:00"
     }
   ]
 }
