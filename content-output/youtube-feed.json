@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-04T21:24:39.888Z",
+  "fetchedAt": "2026-10-05T14:38:21.551Z",
   "entries": [
+    {
+      "id": "y-JecUDnxZA",
+      "title": "When LEGO Replaced DUPLO With Explore",
+      "url": "https://www.youtube.com/shorts/y-JecUDnxZA",
+      "thumbnail": "https://i2.ytimg.com/vi/y-JecUDnxZA/hqdefault.jpg",
+      "publishedAt": "2026-10-05T06:16:28+00:00",
+      "updatedAt": "2026-10-05T06:16:30+00:00"
+    },
     {
       "id": "s0K0KOR6suc",
       "title": "The Australian Dream Is Costing More: What a Rate Rise Adds to Your Mortgage",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i1.ytimg.com/vi/paly0Ewa_qQ/hqdefault.jpg",
       "publishedAt": "2026-09-22T06:27:02+00:00",
       "updatedAt": "2026-09-29T01:13:16+00:00"
-    },
-    {
-      "id": "iL-MXA2B7m0",
-      "title": "A $5 Subscription Can Lose Money`",
-      "url": "https://www.youtube.com/shorts/iL-MXA2B7m0",
-      "thumbnail": "https://i2.ytimg.com/vi/iL-MXA2B7m0/hqdefault.jpg",
-      "publishedAt": "2026-09-21T01:14:43+00:00",
-      "updatedAt": "2026-09-21T03:50:25+00:00"
     }
   ]
 }
