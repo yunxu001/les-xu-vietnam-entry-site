@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-06T00:03:15.166Z",
+  "fetchedAt": "2026-10-06T18:21:47.904Z",
   "entries": [
+    {
+      "id": "i_Zs0TwQw-8",
+      "title": "Netflix Removed Late Fees. It Kept One Limit.",
+      "url": "https://www.youtube.com/shorts/i_Zs0TwQw-8",
+      "thumbnail": "https://i2.ytimg.com/vi/i_Zs0TwQw-8/hqdefault.jpg",
+      "publishedAt": "2026-10-06T04:52:33+00:00",
+      "updatedAt": "2026-10-06T04:52:40+00:00"
+    },
     {
       "id": "y-JecUDnxZA",
       "title": "When LEGO Replaced DUPLO With Explore",
@@ -32,7 +40,7 @@
       "url": "https://www.youtube.com/shorts/dvd80UVaq78",
       "thumbnail": "https://i1.ytimg.com/vi/dvd80UVaq78/hqdefault.jpg",
       "publishedAt": "2026-10-02T05:39:30+00:00",
-      "updatedAt": "2026-10-02T05:39:35+00:00"
+      "updatedAt": "2026-10-04T23:38:18+00:00"
     },
     {
       "id": "1tUcmCTrhuY",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i4.ytimg.com/vi/oIbHtWBx2qk/hqdefault.jpg",
       "publishedAt": "2026-09-23T11:40:48+00:00",
       "updatedAt": "2026-09-24T01:58:42+00:00"
-    },
-    {
-      "id": "paly0Ewa_qQ",
-      "title": "A $1,000 Sale Can Create a $700 Cash Gap",
-      "url": "https://www.youtube.com/shorts/paly0Ewa_qQ",
-      "thumbnail": "https://i1.ytimg.com/vi/paly0Ewa_qQ/hqdefault.jpg",
-      "publishedAt": "2026-09-22T06:27:02+00:00",
-      "updatedAt": "2026-09-29T01:13:16+00:00"
     }
   ]
 }
