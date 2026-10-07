@@ -1,7 +1,23 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-06T18:21:47.904Z",
+  "fetchedAt": "2026-10-07T13:23:14.389Z",
   "entries": [
+    {
+      "id": "8a7gFbf78Fg",
+      "title": "Australia’s “40-Year Property Crash”: What the Data Actually Says",
+      "url": "https://www.youtube.com/watch?v=8a7gFbf78Fg",
+      "thumbnail": "https://i1.ytimg.com/vi/8a7gFbf78Fg/hqdefault.jpg",
+      "publishedAt": "2026-10-07T01:47:47+00:00",
+      "updatedAt": "2026-10-07T01:52:07+00:00"
+    },
+    {
+      "id": "JdUTySfvGpI",
+      "title": "McDonald’s: The Deal Behind the Burger",
+      "url": "https://www.youtube.com/shorts/JdUTySfvGpI",
+      "thumbnail": "https://i3.ytimg.com/vi/JdUTySfvGpI/hqdefault.jpg",
+      "publishedAt": "2026-10-07T01:41:12+00:00",
+      "updatedAt": "2026-10-07T01:41:19+00:00"
+    },
     {
       "id": "i_Zs0TwQw-8",
       "title": "Netflix Removed Late Fees. It Kept One Limit.",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i2.ytimg.com/vi/UqEV0-e3nnY/hqdefault.jpg",
       "publishedAt": "2026-09-25T11:28:25+00:00",
       "updatedAt": "2026-09-26T16:22:21+00:00"
-    },
-    {
-      "id": "_QiOKgSSecU",
-      "title": "Did AI Save Time—or Move the Work?",
-      "url": "https://www.youtube.com/shorts/_QiOKgSSecU",
-      "thumbnail": "https://i4.ytimg.com/vi/_QiOKgSSecU/hqdefault.jpg",
-      "publishedAt": "2026-09-24T02:39:11+00:00",
-      "updatedAt": "2026-09-29T13:13:56+00:00"
-    },
-    {
-      "id": "oIbHtWBx2qk",
-      "title": "One Email. A $500 Sale.",
-      "url": "https://www.youtube.com/shorts/oIbHtWBx2qk",
-      "thumbnail": "https://i4.ytimg.com/vi/oIbHtWBx2qk/hqdefault.jpg",
-      "publishedAt": "2026-09-23T11:40:48+00:00",
-      "updatedAt": "2026-09-24T01:58:42+00:00"
     }
   ]
 }
