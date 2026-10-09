@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-08T23:21:06.173Z",
+  "fetchedAt": "2026-10-09T13:16:49.135Z",
   "entries": [
+    {
+      "id": "2Kcyj_mWcXc",
+      "title": "Costco's $5.9B Membership Engine",
+      "url": "https://www.youtube.com/shorts/2Kcyj_mWcXc",
+      "thumbnail": "https://i3.ytimg.com/vi/2Kcyj_mWcXc/hqdefault.jpg",
+      "publishedAt": "2026-10-09T02:34:25+00:00",
+      "updatedAt": "2026-10-09T02:34:33+00:00"
+    },
     {
       "id": "_Y7E4qkRdQM",
       "title": "Australia’s Card Surcharge Ban: What Fees Can Still Appear?",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i1.ytimg.com/vi/Ho-iP7kHMLc/hqdefault.jpg",
       "publishedAt": "2026-09-27T23:09:30+00:00",
       "updatedAt": "2026-09-27T23:09:30+00:00"
-    },
-    {
-      "id": "qt7HsWkvh64",
-      "title": "Meta's New VR Glasses Weigh 100g—But What About the Puck?",
-      "url": "https://www.youtube.com/shorts/qt7HsWkvh64",
-      "thumbnail": "https://i2.ytimg.com/vi/qt7HsWkvh64/hqdefault.jpg",
-      "publishedAt": "2026-09-27T10:47:55+00:00",
-      "updatedAt": "2026-10-03T21:12:35+00:00"
     }
   ]
 }
