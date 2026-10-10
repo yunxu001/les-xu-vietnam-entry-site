@@ -1,7 +1,15 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-09T22:38:13.142Z",
+  "fetchedAt": "2026-10-10T12:31:41.262Z",
   "entries": [
+    {
+      "id": "SXrz5cA_-5Q",
+      "title": "Why Zara Sends New Stock Twice a Week",
+      "url": "https://www.youtube.com/shorts/SXrz5cA_-5Q",
+      "thumbnail": "https://i4.ytimg.com/vi/SXrz5cA_-5Q/hqdefault.jpg",
+      "publishedAt": "2026-10-10T03:17:45+00:00",
+      "updatedAt": "2026-10-10T03:17:48+00:00"
+    },
     {
       "id": "2Kcyj_mWcXc",
       "title": "Costco's $5.9B Membership Engine",
@@ -113,14 +121,6 @@
       "thumbnail": "https://i3.ytimg.com/vi/b9yARdGGHDY/hqdefault.jpg",
       "publishedAt": "2026-09-29T01:30:07+00:00",
       "updatedAt": "2026-09-30T01:51:17+00:00"
-    },
-    {
-      "id": "Ho-iP7kHMLc",
-      "title": "Meta's $1,300 VR Glasses: What Do You Actually Get?",
-      "url": "https://www.youtube.com/watch?v=Ho-iP7kHMLc",
-      "thumbnail": "https://i1.ytimg.com/vi/Ho-iP7kHMLc/hqdefault.jpg",
-      "publishedAt": "2026-09-27T23:09:30+00:00",
-      "updatedAt": "2026-09-27T23:09:30+00:00"
     }
   ]
 }
