@@ -1,7 +1,31 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-10T21:43:57.181Z",
+  "fetchedAt": "2026-10-11T12:49:50.663Z",
   "entries": [
+    {
+      "id": "MNudxP3y9GM",
+      "title": "The Shorter Queue Tricks",
+      "url": "https://www.youtube.com/shorts/MNudxP3y9GM",
+      "thumbnail": "https://i2.ytimg.com/vi/MNudxP3y9GM/hqdefault.jpg",
+      "publishedAt": "2026-10-11T05:10:41+00:00",
+      "updatedAt": "2026-10-11T05:10:45+00:00"
+    },
+    {
+      "id": "B3XbfUnFNAY",
+      "title": "Why the Other Queue Always Looks Faster",
+      "url": "https://www.youtube.com/watch?v=B3XbfUnFNAY",
+      "thumbnail": "https://i3.ytimg.com/vi/B3XbfUnFNAY/hqdefault.jpg",
+      "publishedAt": "2026-10-11T05:06:20+00:00",
+      "updatedAt": "2026-10-11T05:08:40+00:00"
+    },
+    {
+      "id": "MqHI98KGuyg",
+      "title": "China's Livestream Farm: A $1M Day? Sales Aren't Profit",
+      "url": "https://www.youtube.com/watch?v=MqHI98KGuyg",
+      "thumbnail": "https://i2.ytimg.com/vi/MqHI98KGuyg/hqdefault.jpg",
+      "publishedAt": "2026-10-11T05:01:12+00:00",
+      "updatedAt": "2026-10-11T05:01:12+00:00"
+    },
     {
       "id": "SXrz5cA_-5Q",
       "title": "Why Zara Sends New Stock Twice a Week",
@@ -97,30 +121,6 @@
       "thumbnail": "https://i2.ytimg.com/vi/1tUcmCTrhuY/hqdefault.jpg",
       "publishedAt": "2026-10-01T04:50:59+00:00",
       "updatedAt": "2026-10-01T04:51:03+00:00"
-    },
-    {
-      "id": "pvXd_TRoIRw",
-      "title": "AI’s $820 Billion Buildout: Who Pays—and What Pays It Back?",
-      "url": "https://www.youtube.com/watch?v=pvXd_TRoIRw",
-      "thumbnail": "https://i1.ytimg.com/vi/pvXd_TRoIRw/hqdefault.jpg",
-      "publishedAt": "2026-09-30T11:49:11+00:00",
-      "updatedAt": "2026-09-30T11:49:11+00:00"
-    },
-    {
-      "id": "TQjg0K__kB0",
-      "title": "How Ryanair Made €4.99bn from Extras",
-      "url": "https://www.youtube.com/shorts/TQjg0K__kB0",
-      "thumbnail": "https://i1.ytimg.com/vi/TQjg0K__kB0/hqdefault.jpg",
-      "publishedAt": "2026-09-30T01:57:06+00:00",
-      "updatedAt": "2026-10-03T03:01:09+00:00"
-    },
-    {
-      "id": "b9yARdGGHDY",
-      "title": "How a $1,000 Job Can Become $44 an Hour",
-      "url": "https://www.youtube.com/shorts/b9yARdGGHDY",
-      "thumbnail": "https://i3.ytimg.com/vi/b9yARdGGHDY/hqdefault.jpg",
-      "publishedAt": "2026-09-29T01:30:07+00:00",
-      "updatedAt": "2026-09-30T01:51:17+00:00"
     }
   ]
 }
