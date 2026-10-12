@@ -1,7 +1,23 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-11T21:57:54.822Z",
+  "fetchedAt": "2026-10-12T15:25:07.704Z",
   "entries": [
+    {
+      "id": "OBpqs2z5KUg",
+      "title": "What Can Six Ancient Huts Tell Us?",
+      "url": "https://www.youtube.com/shorts/OBpqs2z5KUg",
+      "thumbnail": "https://i4.ytimg.com/vi/OBpqs2z5KUg/hqdefault.jpg",
+      "publishedAt": "2026-10-12T01:29:37+00:00",
+      "updatedAt": "2026-10-12T01:29:40+00:00"
+    },
+    {
+      "id": "VueR73q2Beo",
+      "title": "Six Huts, 23,000 Years: What an Ancient Camp Can Tell Us",
+      "url": "https://www.youtube.com/watch?v=VueR73q2Beo",
+      "thumbnail": "https://i3.ytimg.com/vi/VueR73q2Beo/hqdefault.jpg",
+      "publishedAt": "2026-10-12T01:26:52+00:00",
+      "updatedAt": "2026-10-12T01:31:07+00:00"
+    },
     {
       "id": "MNudxP3y9GM",
       "title": "The Shorter Queue Tricks",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i2.ytimg.com/vi/9wM5yZBDEgY/hqdefault.jpg",
       "publishedAt": "2026-10-04T11:24:19+00:00",
       "updatedAt": "2026-10-04T11:24:25+00:00"
-    },
-    {
-      "id": "dvd80UVaq78",
-      "title": "How IKEA Turned Flat-Packs Into a Business Advantage",
-      "url": "https://www.youtube.com/shorts/dvd80UVaq78",
-      "thumbnail": "https://i1.ytimg.com/vi/dvd80UVaq78/hqdefault.jpg",
-      "publishedAt": "2026-10-02T05:39:30+00:00",
-      "updatedAt": "2026-10-04T23:38:18+00:00"
-    },
-    {
-      "id": "1tUcmCTrhuY",
-      "title": "How Costco's $5.9B Membership Engine Works",
-      "url": "https://www.youtube.com/shorts/1tUcmCTrhuY",
-      "thumbnail": "https://i2.ytimg.com/vi/1tUcmCTrhuY/hqdefault.jpg",
-      "publishedAt": "2026-10-01T04:50:59+00:00",
-      "updatedAt": "2026-10-01T04:51:03+00:00"
     }
   ]
 }
