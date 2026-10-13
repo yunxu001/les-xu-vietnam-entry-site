@@ -1,7 +1,23 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-12T15:25:07.704Z",
+  "fetchedAt": "2026-10-13T14:11:22.704Z",
   "entries": [
+    {
+      "id": "5geS5NpRawM",
+      "title": "Why Do We Keep Checking Bad News?",
+      "url": "https://www.youtube.com/shorts/5geS5NpRawM",
+      "thumbnail": "https://i2.ytimg.com/vi/5geS5NpRawM/hqdefault.jpg",
+      "publishedAt": "2026-10-13T02:58:11+00:00",
+      "updatedAt": "2026-10-13T02:58:15+00:00"
+    },
+    {
+      "id": "eviF9GO0ToQ",
+      "title": "Why You Keep Checking Bad News",
+      "url": "https://www.youtube.com/watch?v=eviF9GO0ToQ",
+      "thumbnail": "https://i2.ytimg.com/vi/eviF9GO0ToQ/hqdefault.jpg",
+      "publishedAt": "2026-10-13T02:57:29+00:00",
+      "updatedAt": "2026-10-13T03:00:35+00:00"
+    },
     {
       "id": "OBpqs2z5KUg",
       "title": "What Can Six Ancient Huts Tell Us?",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i2.ytimg.com/vi/y-JecUDnxZA/hqdefault.jpg",
       "publishedAt": "2026-10-05T06:16:28+00:00",
       "updatedAt": "2026-10-05T06:16:30+00:00"
-    },
-    {
-      "id": "s0K0KOR6suc",
-      "title": "The Australian Dream Is Costing More: What a Rate Rise Adds to Your Mortgage",
-      "url": "https://www.youtube.com/watch?v=s0K0KOR6suc",
-      "thumbnail": "https://i4.ytimg.com/vi/s0K0KOR6suc/hqdefault.jpg",
-      "publishedAt": "2026-10-04T11:29:03+00:00",
-      "updatedAt": "2026-10-04T11:32:51+00:00"
-    },
-    {
-      "id": "9wM5yZBDEgY",
-      "title": "Why a Tyre Company Made a Travel Guide",
-      "url": "https://www.youtube.com/shorts/9wM5yZBDEgY",
-      "thumbnail": "https://i2.ytimg.com/vi/9wM5yZBDEgY/hqdefault.jpg",
-      "publishedAt": "2026-10-04T11:24:19+00:00",
-      "updatedAt": "2026-10-04T11:24:25+00:00"
     }
   ]
 }
