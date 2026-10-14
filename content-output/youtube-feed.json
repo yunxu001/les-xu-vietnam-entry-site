@@ -1,7 +1,23 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-13T14:11:22.704Z",
+  "fetchedAt": "2026-10-14T11:51:42.093Z",
   "entries": [
+    {
+      "id": "jvpH2A68Sf4",
+      "title": "Why Laptop Touchscreens Divide Users",
+      "url": "https://www.youtube.com/shorts/jvpH2A68Sf4",
+      "thumbnail": "https://i3.ytimg.com/vi/jvpH2A68Sf4/hqdefault.jpg",
+      "publishedAt": "2026-10-14T04:39:53+00:00",
+      "updatedAt": "2026-10-14T04:40:13+00:00"
+    },
+    {
+      "id": "5XOm0eM3cuM",
+      "title": "Why Laptop Touchscreens Divide Users",
+      "url": "https://www.youtube.com/watch?v=5XOm0eM3cuM",
+      "thumbnail": "https://i2.ytimg.com/vi/5XOm0eM3cuM/hqdefault.jpg",
+      "publishedAt": "2026-10-14T04:38:02+00:00",
+      "updatedAt": "2026-10-14T04:42:02+00:00"
+    },
     {
       "id": "5geS5NpRawM",
       "title": "Why Do We Keep Checking Bad News?",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i3.ytimg.com/vi/JdUTySfvGpI/hqdefault.jpg",
       "publishedAt": "2026-10-07T01:41:12+00:00",
       "updatedAt": "2026-10-07T01:41:19+00:00"
-    },
-    {
-      "id": "i_Zs0TwQw-8",
-      "title": "Netflix Removed Late Fees. It Kept One Limit.",
-      "url": "https://www.youtube.com/shorts/i_Zs0TwQw-8",
-      "thumbnail": "https://i2.ytimg.com/vi/i_Zs0TwQw-8/hqdefault.jpg",
-      "publishedAt": "2026-10-06T04:52:33+00:00",
-      "updatedAt": "2026-10-06T04:52:40+00:00"
-    },
-    {
-      "id": "y-JecUDnxZA",
-      "title": "When LEGO Replaced DUPLO With Explore",
-      "url": "https://www.youtube.com/shorts/y-JecUDnxZA",
-      "thumbnail": "https://i2.ytimg.com/vi/y-JecUDnxZA/hqdefault.jpg",
-      "publishedAt": "2026-10-05T06:16:28+00:00",
-      "updatedAt": "2026-10-05T06:16:30+00:00"
     }
   ]
 }
