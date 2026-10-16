@@ -1,7 +1,23 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-15T21:23:24.643Z",
+  "fetchedAt": "2026-10-16T11:24:14.236Z",
   "entries": [
+    {
+      "id": "AQ8n4ingxIA",
+      "title": "You Think Everyone Noticed",
+      "url": "https://www.youtube.com/shorts/AQ8n4ingxIA",
+      "thumbnail": "https://i2.ytimg.com/vi/AQ8n4ingxIA/hqdefault.jpg",
+      "publishedAt": "2026-10-16T02:45:53+00:00",
+      "updatedAt": "2026-10-16T02:45:59+00:00"
+    },
+    {
+      "id": "CUkloFk2f_s",
+      "title": "Why Your Awkward Moment Feels Huge",
+      "url": "https://www.youtube.com/watch?v=CUkloFk2f_s",
+      "thumbnail": "https://i4.ytimg.com/vi/CUkloFk2f_s/hqdefault.jpg",
+      "publishedAt": "2026-10-16T02:44:12+00:00",
+      "updatedAt": "2026-10-16T02:45:43+00:00"
+    },
     {
       "id": "xtphHQ8nZRw",
       "title": "Everyone nodded. The hallway reveal.",
@@ -64,7 +80,7 @@
       "url": "https://www.youtube.com/watch?v=VueR73q2Beo",
       "thumbnail": "https://i3.ytimg.com/vi/VueR73q2Beo/hqdefault.jpg",
       "publishedAt": "2026-10-12T01:26:52+00:00",
-      "updatedAt": "2026-10-12T01:31:07+00:00"
+      "updatedAt": "2026-10-15T03:25:59+00:00"
     },
     {
       "id": "MNudxP3y9GM",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i3.ytimg.com/vi/2Kcyj_mWcXc/hqdefault.jpg",
       "publishedAt": "2026-10-09T02:34:25+00:00",
       "updatedAt": "2026-10-09T02:34:33+00:00"
-    },
-    {
-      "id": "_Y7E4qkRdQM",
-      "title": "Australia’s Card Surcharge Ban: What Fees Can Still Appear?",
-      "url": "https://www.youtube.com/watch?v=_Y7E4qkRdQM",
-      "thumbnail": "https://i4.ytimg.com/vi/_Y7E4qkRdQM/hqdefault.jpg",
-      "publishedAt": "2026-10-08T04:19:10+00:00",
-      "updatedAt": "2026-10-08T04:19:11+00:00"
-    },
-    {
-      "id": "kJ5au-93hcc",
-      "title": "10,000 LEGO Ideas Supporters—Still No Guarantee",
-      "url": "https://www.youtube.com/shorts/kJ5au-93hcc",
-      "thumbnail": "https://i4.ytimg.com/vi/kJ5au-93hcc/hqdefault.jpg",
-      "publishedAt": "2026-10-08T04:10:02+00:00",
-      "updatedAt": "2026-10-08T04:10:06+00:00"
     }
   ]
 }
