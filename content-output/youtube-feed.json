@@ -1,7 +1,23 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-19T22:21:00.179Z",
+  "fetchedAt": "2026-10-20T11:35:59.275Z",
   "entries": [
+    {
+      "id": "KIuBofzsoas",
+      "title": "why trains changed your clock portrait v1",
+      "url": "https://www.youtube.com/shorts/KIuBofzsoas",
+      "thumbnail": "https://i4.ytimg.com/vi/KIuBofzsoas/hqdefault.jpg",
+      "publishedAt": "2026-10-20T08:30:11+00:00",
+      "updatedAt": "2026-10-20T08:30:13+00:00"
+    },
+    {
+      "id": "VL5FDY40JjI",
+      "title": "Why Trains Changed Your Clock",
+      "url": "https://www.youtube.com/watch?v=VL5FDY40JjI",
+      "thumbnail": "https://i3.ytimg.com/vi/VL5FDY40JjI/hqdefault.jpg",
+      "publishedAt": "2026-10-20T08:09:52+00:00",
+      "updatedAt": "2026-10-20T08:10:14+00:00"
+    },
     {
       "id": "AQ8n4ingxIA",
       "title": "You Think Everyone Noticed",
@@ -40,7 +56,7 @@
       "url": "https://www.youtube.com/shorts/jvpH2A68Sf4",
       "thumbnail": "https://i3.ytimg.com/vi/jvpH2A68Sf4/hqdefault.jpg",
       "publishedAt": "2026-10-14T04:39:53+00:00",
-      "updatedAt": "2026-10-14T04:40:13+00:00"
+      "updatedAt": "2026-10-18T00:43:49+00:00"
     },
     {
       "id": "5XOm0eM3cuM",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i2.ytimg.com/vi/MqHI98KGuyg/hqdefault.jpg",
       "publishedAt": "2026-10-11T05:01:12+00:00",
       "updatedAt": "2026-10-11T05:01:12+00:00"
-    },
-    {
-      "id": "SXrz5cA_-5Q",
-      "title": "Why Zara Sends New Stock Twice a Week",
-      "url": "https://www.youtube.com/shorts/SXrz5cA_-5Q",
-      "thumbnail": "https://i4.ytimg.com/vi/SXrz5cA_-5Q/hqdefault.jpg",
-      "publishedAt": "2026-10-10T03:17:45+00:00",
-      "updatedAt": "2026-10-10T03:17:48+00:00"
-    },
-    {
-      "id": "2Kcyj_mWcXc",
-      "title": "Costco's $5.9B Membership Engine",
-      "url": "https://www.youtube.com/shorts/2Kcyj_mWcXc",
-      "thumbnail": "https://i3.ytimg.com/vi/2Kcyj_mWcXc/hqdefault.jpg",
-      "publishedAt": "2026-10-09T02:34:25+00:00",
-      "updatedAt": "2026-10-09T02:34:33+00:00"
     }
   ]
 }
