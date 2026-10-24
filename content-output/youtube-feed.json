@@ -1,7 +1,23 @@
 {
   "channelId": "UCW1SCx6_phXf03LxTjEuB9A",
-  "fetchedAt": "2026-10-23T21:24:18.515Z",
+  "fetchedAt": "2026-10-24T10:59:48.781Z",
   "entries": [
+    {
+      "id": "k1_qQJ7kncI",
+      "title": "The Handshake Isn’t Neutral",
+      "url": "https://www.youtube.com/shorts/k1_qQJ7kncI",
+      "thumbnail": "https://i4.ytimg.com/vi/k1_qQJ7kncI/hqdefault.jpg",
+      "publishedAt": "2026-10-24T09:37:52+00:00",
+      "updatedAt": "2026-10-24T09:37:54+00:00"
+    },
+    {
+      "id": "_I1yKTG5m2A",
+      "title": "Why Do We Still Shake Hands? The Gesture Has No Single Meaning",
+      "url": "https://www.youtube.com/watch?v=_I1yKTG5m2A",
+      "thumbnail": "https://i4.ytimg.com/vi/_I1yKTG5m2A/hqdefault.jpg",
+      "publishedAt": "2026-10-24T09:30:31+00:00",
+      "updatedAt": "2026-10-24T09:30:36+00:00"
+    },
     {
       "id": "KIuBofzsoas",
       "title": "why trains changed your clock portrait v1",
@@ -105,22 +121,6 @@
       "thumbnail": "https://i2.ytimg.com/vi/MNudxP3y9GM/hqdefault.jpg",
       "publishedAt": "2026-10-11T05:10:41+00:00",
       "updatedAt": "2026-10-11T05:10:45+00:00"
-    },
-    {
-      "id": "B3XbfUnFNAY",
-      "title": "Why the Other Queue Always Looks Faster",
-      "url": "https://www.youtube.com/watch?v=B3XbfUnFNAY",
-      "thumbnail": "https://i3.ytimg.com/vi/B3XbfUnFNAY/hqdefault.jpg",
-      "publishedAt": "2026-10-11T05:06:20+00:00",
-      "updatedAt": "2026-10-11T05:08:40+00:00"
-    },
-    {
-      "id": "MqHI98KGuyg",
-      "title": "China's Livestream Farm: A $1M Day? Sales Aren't Profit",
-      "url": "https://www.youtube.com/watch?v=MqHI98KGuyg",
-      "thumbnail": "https://i2.ytimg.com/vi/MqHI98KGuyg/hqdefault.jpg",
-      "publishedAt": "2026-10-11T05:01:12+00:00",
-      "updatedAt": "2026-10-11T05:01:12+00:00"
     }
   ]
 }
